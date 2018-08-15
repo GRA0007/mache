@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<title>Buttons</title>
+		<meta name="viewport" content="width=device-width, initial-scale=1, minimum-scale=1">
+		<link rel="stylesheet" href="../styles/buttons.css" />
+	</head>
+	<body>
+		<h1>Buttons</h1>
+		<h3>Contained</h3>
+		<button type="button" class="contained">Enabled</button>
+		<button type="button" class="contained"><svg viewBox="0 0 24 24"><path fill="#FFF" d="M21,7L9,19L3.5,13.5L4.91,12.09L9,16.17L19.59,5.59L21,7Z" /></svg>Icon</button>
+		<button type="button" class="contained" disabled>Disabled</button>
+		<h3>Outlined</h3>
+		<button type="button" class="outlined">Enabled</button>
+		<button type="button" class="outlined"><svg viewBox="0 0 24 24"><path fill="#6200EA" d="M21,7L9,19L3.5,13.5L4.91,12.09L9,16.17L19.59,5.59L21,7Z" /></svg>Icon</button>
+		<button type="button" class="outlined" disabled>Disabled</button>
+		<h3>Text</h3>
+		<button type="button" class="text">Enabled</button>
+		<button type="button" class="text"><svg viewBox="0 0 24 24"><path fill="#6200EA" d="M21,7L9,19L3.5,13.5L4.91,12.09L9,16.17L19.59,5.59L21,7Z" /></svg>Icon</button>
+		<button type="button" class="text" disabled>Disabled</button>
+		<h3>Toggle</h3>
+		<div class="toggleRow">
+			<button type="button" class="toggle"><svg viewBox="0 0 24 24"><path fill="#000000" d="M10,4V7H12.21L8.79,15H6V18H14V15H11.79L15.21,7H18V4H10Z" /></svg></button>
+			<button type="button" class="toggle active"><svg viewBox="0 0 24 24"><path fill="#000000" d="M13.5,15.5H10V12.5H13.5A1.5,1.5 0 0,1 15,14A1.5,1.5 0 0,1 13.5,15.5M10,6.5H13A1.5,1.5 0 0,1 14.5,8A1.5,1.5 0 0,1 13,9.5H10M15.6,10.79C16.57,10.11 17.25,9 17.25,8C17.25,5.74 15.5,4 13.25,4H7V18H14.04C16.14,18 17.75,16.3 17.75,14.21C17.75,12.69 16.89,11.39 15.6,10.79Z" /></svg></button>
+			<button type="button" class="toggle" disabled><svg viewBox="0 0 24 24"><path fill="#000000" d="M5,21H19V19H5V21M12,17A6,6 0 0,0 18,11V3H15.5V11A3.5,3.5 0 0,1 12,14.5A3.5,3.5 0 0,1 8.5,11V3H6V11A6,6 0 0,0 12,17Z" /></svg></button>
+		</div>
+		<script>
+			var toggle = document.querySelector('.toggleRow').querySelectorAll('.toggle');
+			for (var i = 0; i < toggle.length; i++) {
+				toggle[i].onclick = function() {
+					for (var j = 0; j < toggle.length; j++) {
+						toggle[j].classList.remove('active');
+					}
+					this.classList.add('active');
+				};
+			}
+		</script>
+		<h3>Icon</h3>
+		<button type="button" class="icon"><svg viewBox="0 0 24 24"><path fill="#666" d="M12.1,18.55L12,18.65L11.89,18.55C7.14,14.24 4,11.39 4,8.5C4,6.5 5.5,5 7.5,5C9.04,5 10.54,6 11.07,7.36H12.93C13.46,6 14.96,5 16.5,5C18.5,5 20,6.5 20,8.5C20,11.39 16.86,14.24 12.1,18.55M16.5,3C14.76,3 13.09,3.81 12,5.08C10.91,3.81 9.24,3 7.5,3C4.42,3 2,5.41 2,8.5C2,12.27 5.4,15.36 10.55,20.03L12,21.35L13.45,20.03C18.6,15.36 22,12.27 22,8.5C22,5.41 19.58,3 16.5,3Z" /></svg></button>
+		<button type="button" class="icon" disabled><svg viewBox="0 0 24 24"><path fill="#666" d="M12.1,18.55L12,18.65L11.89,18.55C7.14,14.24 4,11.39 4,8.5C4,6.5 5.5,5 7.5,5C9.04,5 10.54,6 11.07,7.36H12.93C13.46,6 14.96,5 16.5,5C18.5,5 20,6.5 20,8.5C20,11.39 16.86,14.24 12.1,18.55M16.5,3C14.76,3 13.09,3.81 12,5.08C10.91,3.81 9.24,3 7.5,3C4.42,3 2,5.41 2,8.5C2,12.27 5.4,15.36 10.55,20.03L12,21.35L13.45,20.03C18.6,15.36 22,12.27 22,8.5C22,5.41 19.58,3 16.5,3Z" /></svg></button>
+	</body>
+</html>

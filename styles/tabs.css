@@ -1,0 +1,80 @@
+.tabs {
+	width:100%;
+	background-color:#FFF;
+	display:flex;
+	box-sizing:border-box;
+	justify-content:center;
+}
+.tabs.colored {
+	background-color:#6200EA;
+}
+.tabs .tab {
+	display:inline-block;
+	font-size:14px;
+	letter-spacing:.5px;
+	font-weight:500;
+	cursor:pointer;
+	text-transform:uppercase;
+	white-space:nowrap;
+	text-decoration:none;
+	color:#7a7a7a;
+	border-bottom:2px solid transparent;
+	text-align:center;
+	transition:background-color .2s, border .2s, color .2s;
+}
+.tabs .tab:hover {
+	background-color:rgba(179,136,255,.2);
+}
+.tabs .tab:focus {
+	background-color:rgba(179,136,255,.3);
+}
+.tabs .tab:active {
+	background-color:rgba(179,136,255,.4);
+}
+.tabs .tab span {
+	padding:16px 18px;
+	display:block;
+}
+.tabs .tab svg + span {
+	padding-top:0;
+	padding-bottom:12px;
+	margin-top:-8px;
+}
+.tabs .tab svg {
+	height:24px;
+	width:24px;
+	fill:#757575;
+	display:inline-block;
+	box-sizing:content-box;
+	padding:12px 48px;
+	transition:fill .2s;
+}
+.tabs .tab svg path {
+	fill:inherit;
+}
+.tabs.colored .tab {
+	color:#bd95f7;
+}
+.tabs .tab.active {
+	color:#6200EE;
+	border-bottom:2px solid #6200EE;
+}
+.tabs .tab.active svg {
+	fill:#6200EE;
+}
+.tabs.colored .tab.active {
+	color:#FFF;
+	border-bottom:2px solid #FFF;
+}
+.tabs.colored .tab svg {
+	fill:#b68af7;
+}
+.tabs.colored .tab.active svg {
+	fill:#FFF;
+}
+
+.tabs.scroll {
+	justify-content:flex-start;
+	overflow-x:auto;
+	padding-left:52px;
+}

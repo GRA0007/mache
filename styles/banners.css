@@ -1,0 +1,80 @@
+.banner {
+	background-color:#FFF;
+	
+	font-size:14px;
+	font-weight:400;
+	
+	min-height:54px;
+	width:100%;
+	padding:0;
+	display:flex;
+	justify-content:space-between;
+	
+	border-bottom:1px solid #d0d0d0;
+	box-sizing:border-box;
+	position:relative;
+}
+.banner span {
+	height:36px;
+	margin:10px 16px 8px;
+	display:flex;
+	align-items:center;
+}
+.banner button {
+	margin:10px 8px 8px;
+}
+
+.banner.large {
+	display:block;
+	text-align:right;
+}
+.banner.large span {
+	display:block;
+	height:initial;
+	margin:0 16px 12px;
+	padding-top:24px;
+	text-align:left;
+}
+.banner.large button {
+	margin:0 8px 8px 0;
+}
+
+.banner.large.image span {
+	margin:0 16px 12px 72px;
+}
+.banner.large.image img {
+	position:absolute;
+	height:40px;
+	width:40px;
+	border-radius:50px;
+	top:24px;
+	left:16px;
+	object-fit:cover;
+}
+
+@media screen and (min-width: 800px) {
+	.banner span {
+		margin:10px 16px 8px 24px;
+	}
+	
+	.banner.large {
+		display:flex;
+		text-align:left;
+	}
+	.banner.large span {
+		height:initial;
+		margin:0 90px 0 24px;
+		padding-top:20px;
+		padding-bottom:16px;
+		flex:1;
+	}
+	.banner.large button {
+		align-self:flex-end;
+	}
+	.banner.large.image span {
+		margin:0 90px 0 80px;
+	}
+	.banner.large.image img {
+		top:20px;
+	}
+}

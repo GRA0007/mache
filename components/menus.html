@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<title>Menus</title>
+		<meta name="viewport" content="width=device-width, initial-scale=1, minimum-scale=1">
+		
+		<!-- Supporting -->
+		<link rel="stylesheet" href="../styles/dividers.css" />
+		
+		<link rel="stylesheet" href="../styles/menus.css" />
+	</head>
+	<body>
+		<h1>Menus</h1>
+		<h3>Standard</h3>
+		<div class="menu">
+			<a href="#" class="item">Item 1</a>
+			<a href="#" class="item">Item 2</a>
+			<a href="#" class="item">Item 3</a>
+		</div>
+		
+		<h3>Icons</h3>
+		<div class="menu">
+			<a href="#" class="item">
+				<svg viewBox="0 0 24 24"><path fill="#666" d="M12,9A3,3 0 0,0 9,12A3,3 0 0,0 12,15A3,3 0 0,0 15,12A3,3 0 0,0 12,9M12,17A5,5 0 0,1 7,12A5,5 0 0,1 12,7A5,5 0 0,1 17,12A5,5 0 0,1 12,17M12,4.5C7,4.5 2.73,7.61 1,12C2.73,16.39 7,19.5 12,19.5C17,19.5 21.27,16.39 23,12C21.27,7.61 17,4.5 12,4.5Z" /></svg>
+				<span>Preview</span>
+			</a>
+			<a href="#" class="item">
+				<svg viewBox="0 0 24 24"><path fill="#666" d="M15,14C12.33,14 7,15.33 7,18V20H23V18C23,15.33 17.67,14 15,14M6,10V7H4V10H1V12H4V15H6V12H9V10M15,12A4,4 0 0,0 19,8A4,4 0 0,0 15,4A4,4 0 0,0 11,8A4,4 0 0,0 15,12Z" /></svg>
+				<span>Share</span>
+			</a>
+			<a href="#" class="item">
+				<svg viewBox="0 0 24 24"><path fill="#666" d="M16,6H13V7.9H16C18.26,7.9 20.1,9.73 20.1,12A4.1,4.1 0 0,1 16,16.1H13V18H16A6,6 0 0,0 22,12C22,8.68 19.31,6 16,6M3.9,12C3.9,9.73 5.74,7.9 8,7.9H11V6H8A6,6 0 0,0 2,12A6,6 0 0,0 8,18H11V16.1H8C5.74,16.1 3.9,14.26 3.9,12M8,13H16V11H8V13Z" /></svg>
+				<span>Get link</span>
+			</a>
+			<hr>
+			<a href="#" class="item">
+				<svg viewBox="0 0 24 24"><path fill="#666" d="M19,4H15.5L14.5,3H9.5L8.5,4H5V6H19M6,19A2,2 0 0,0 8,21H16A2,2 0 0,0 18,19V7H6V19Z" /></svg>
+				<span>Remove</span>
+			</a>
+		</div>
+		
+		<script>
+			var links = document.querySelectorAll('.menu a');
+				
+			for (var i = 0; i < links.length; i++) {
+				links[i].onclick = function() {
+					return false;
+				};
+			}
+		</script>
+	</body>
+</html>

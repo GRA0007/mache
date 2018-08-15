@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<title>Selection controls</title>
+		<meta name="viewport" content="width=device-width, initial-scale=1, minimum-scale=1">
+		<link rel="stylesheet" href="../styles/selection_controls.css" />
+	</head>
+	<body>
+		<h1>Selection controls</h1>
+		<h3>Checkboxes</h3>
+		<input type="checkbox" role="checkbox" id="input1" />
+		<label for="input1"></label>
+		<input type="checkbox" role="checkbox" id="input2" checked />
+		<label for="input2"></label>
+		<input type="checkbox" role="checkbox" id="input3" />
+		<label for="input3"></label>
+		<input type="checkbox" role="checkbox" id="input4" disabled />
+		<label for="input4"></label>
+		<input type="checkbox" role="checkbox" id="input5" checked disabled />
+		<label for="input5"></label>
+		<input type="checkbox" role="checkbox" id="input6" disabled />
+		<label for="input6"></label>
+		<script>
+			document.getElementById('input3').indeterminate = true;
+			document.getElementById('input6').indeterminate = true;
+		</script>
+		<h3>Radio Buttons</h3>
+		<input type="radio" name="radio" id="radio1" />
+		<label for="radio1"></label>
+		<input type="radio" name="radio" id="radio2" checked />
+		<label for="radio2"></label>
+		<input type="radio" name="radio" id="radio3" disabled />
+		<label for="radio3"></label>
+		<input type="radio" name="radio-alt" id="radio4" checked disabled />
+		<label for="radio4"></label>
+		<h3>Switches</h3>
+		<input type="checkbox" role="switch" id="switch1" />
+		<label for="switch1"></label>
+		<input type="checkbox" role="switch" id="switch2" checked />
+		<label for="switch2"></label>
+		<input type="checkbox" role="switch" id="switch3" disabled />
+		<label for="switch3"></label>
+		<input type="checkbox" role="switch" id="switch4" checked disabled />
+		<label for="switch4"></label>
+	</body>
+</html>

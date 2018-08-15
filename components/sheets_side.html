@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<title>Sheets: side</title>
+		<meta name="viewport" content="width=device-width, initial-scale=1, minimum-scale=1">
+		
+		<!-- Supporting -->
+		<link rel="stylesheet" href="../styles/buttons.css" />
+		
+		<link rel="stylesheet" href="../styles/sheets_side.css" />
+	</head>
+	<body>
+		<h1>Sheets: side</h1>
+		<h3>Modal</h3>
+		<a href="#" onclick="document.querySelector('.scrim').classList.add('open'); this.nextElementSibling.classList.add('open'); return false;">Open sheet</a>
+		<div class="sheet side">
+			<span class="title">Title</span>
+		</div>
+		
+		<div class="scrim" onclick="this.classList.remove('open'); closeAll();"></div>
+		
+		<script>
+			function closeAll() {
+				var sheets = document.querySelectorAll('.sheet.side');
+				
+				for (var i = 0; i < sheets.length; i++) {
+					sheets[i].classList.remove('open');
+				}
+			}
+		</script>
+	</body>
+</html>

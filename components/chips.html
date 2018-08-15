@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<title>Chips</title>
+		<meta name="viewport" content="width=device-width, initial-scale=1, minimum-scale=1">
+		<link rel="stylesheet" href="../styles/chips.css" />
+	</head>
+	<body>
+		<h1>Chips</h1>
+		
+		<h3>Input chips</h3>
+		<h4>Solid</h4>
+		<button type="button" class="chip image dismissable"><img src="../res/sample_avatar.jpg" />Chip<svg viewBox="0 0 24 24"><path d="M12,2C17.53,2 22,6.47 22,12C22,17.53 17.53,22 12,22C6.47,22 2,17.53 2,12C2,6.47 6.47,2 12,2M15.59,7L12,10.59L8.41,7L7,8.41L10.59,12L7,15.59L8.41,17L12,13.41L15.59,17L17,15.59L13.41,12L17,8.41L15.59,7Z" /></svg></button>
+		<button type="button" class="chip image dismissable active"><img src="../res/sample_avatar.jpg" />Selected<svg viewBox="0 0 24 24"><path d="M12,2C17.53,2 22,6.47 22,12C22,17.53 17.53,22 12,22C6.47,22 2,17.53 2,12C2,6.47 6.47,2 12,2M15.59,7L12,10.59L8.41,7L7,8.41L10.59,12L7,15.59L8.41,17L12,13.41L15.59,17L17,15.59L13.41,12L17,8.41L15.59,7Z" /></svg></button>
+		<button type="button" class="chip image dismissable dragged"><img src="../res/sample_avatar.jpg" />Dragged<svg viewBox="0 0 24 24"><path d="M12,2C17.53,2 22,6.47 22,12C22,17.53 17.53,22 12,22C6.47,22 2,17.53 2,12C2,6.47 6.47,2 12,2M15.59,7L12,10.59L8.41,7L7,8.41L10.59,12L7,15.59L8.41,17L12,13.41L15.59,17L17,15.59L13.41,12L17,8.41L15.59,7Z" /></svg></button>
+		<button type="button" class="chip image dismissable" disabled><img src="../res/sample_avatar.jpg" />Disabled<svg viewBox="0 0 24 24"><path d="M12,2C17.53,2 22,6.47 22,12C22,17.53 17.53,22 12,22C6.47,22 2,17.53 2,12C2,6.47 6.47,2 12,2M15.59,7L12,10.59L8.41,7L7,8.41L10.59,12L7,15.59L8.41,17L12,13.41L15.59,17L17,15.59L13.41,12L17,8.41L15.59,7Z" /></svg></button>
+		<button type="button" class="chip image dismissable error"><img src="../res/sample_avatar.jpg" />Error<svg viewBox="0 0 24 24"><path d="M12,2C17.53,2 22,6.47 22,12C22,17.53 17.53,22 12,22C6.47,22 2,17.53 2,12C2,6.47 6.47,2 12,2M15.59,7L12,10.59L8.41,7L7,8.41L10.59,12L7,15.59L8.41,17L12,13.41L15.59,17L17,15.59L13.41,12L17,8.41L15.59,7Z" /></svg></button>
+		<h4>Outlined</h4>
+		<button type="button" class="chip image dismissable outlined"><img src="../res/sample_avatar.jpg" />Chip<svg viewBox="0 0 24 24"><path d="M12,2C17.53,2 22,6.47 22,12C22,17.53 17.53,22 12,22C6.47,22 2,17.53 2,12C2,6.47 6.47,2 12,2M15.59,7L12,10.59L8.41,7L7,8.41L10.59,12L7,15.59L8.41,17L12,13.41L15.59,17L17,15.59L13.41,12L17,8.41L15.59,7Z" /></svg></button>
+		<button type="button" class="chip image dismissable outlined active"><img src="../res/sample_avatar.jpg" />Selected<svg viewBox="0 0 24 24"><path d="M12,2C17.53,2 22,6.47 22,12C22,17.53 17.53,22 12,22C6.47,22 2,17.53 2,12C2,6.47 6.47,2 12,2M15.59,7L12,10.59L8.41,7L7,8.41L10.59,12L7,15.59L8.41,17L12,13.41L15.59,17L17,15.59L13.41,12L17,8.41L15.59,7Z" /></svg></button>
+		<button type="button" class="chip image dismissable outlined dragged"><img src="../res/sample_avatar.jpg" />Dragged<svg viewBox="0 0 24 24"><path d="M12,2C17.53,2 22,6.47 22,12C22,17.53 17.53,22 12,22C6.47,22 2,17.53 2,12C2,6.47 6.47,2 12,2M15.59,7L12,10.59L8.41,7L7,8.41L10.59,12L7,15.59L8.41,17L12,13.41L15.59,17L17,15.59L13.41,12L17,8.41L15.59,7Z" /></svg></button>
+		<button type="button" class="chip image dismissable outlined" disabled><img src="../res/sample_avatar.jpg" />Disabled<svg viewBox="0 0 24 24"><path d="M12,2C17.53,2 22,6.47 22,12C22,17.53 17.53,22 12,22C6.47,22 2,17.53 2,12C2,6.47 6.47,2 12,2M15.59,7L12,10.59L8.41,7L7,8.41L10.59,12L7,15.59L8.41,17L12,13.41L15.59,17L17,15.59L13.41,12L17,8.41L15.59,7Z" /></svg></button>
+		<button type="button" class="chip image dismissable outlined error"><img src="../res/sample_avatar.jpg" />Error<svg viewBox="0 0 24 24"><path d="M12,2C17.53,2 22,6.47 22,12C22,17.53 17.53,22 12,22C6.47,22 2,17.53 2,12C2,6.47 6.47,2 12,2M15.59,7L12,10.59L8.41,7L7,8.41L10.59,12L7,15.59L8.41,17L12,13.41L15.59,17L17,15.59L13.41,12L17,8.41L15.59,7Z" /></svg></button>
+		
+		<h3>Choice chips</h3>
+		<h4>Solid</h4>
+		<button type="button" class="chip">Chip</button>
+		<button type="button" class="chip active">Selected</button>
+		<button type="button" class="chip" disabled>Disabled</button>
+		<h4>Outlined</h4>
+		<button type="button" class="chip outlined">Chip</button>
+		<button type="button" class="chip outlined active">Selected</button>
+		<button type="button" class="chip outlined" disabled>Disabled</button>
+		
+		<h3>Filter chips</h3>
+		<h4>Solid</h4>
+		<button type="button" class="chip filter"><svg viewBox="0 0 24 24"><path fill="#000" d="M21,7L9,19L3.5,13.5L4.91,12.09L9,16.17L19.59,5.59L21,7Z" /></svg>Chip</button>
+		<button type="button" class="chip filter active"><svg viewBox="0 0 24 24"><path fill="#000" d="M21,7L9,19L3.5,13.5L4.91,12.09L9,16.17L19.59,5.59L21,7Z" /></svg>Selected</button>
+		<button type="button" class="chip filter" disabled><svg viewBox="0 0 24 24"><path fill="#000" d="M21,7L9,19L3.5,13.5L4.91,12.09L9,16.17L19.59,5.59L21,7Z" /></svg>Disabled</button>
+		<h4>Outlined</h4>
+		<button type="button" class="chip filter outlined"><svg viewBox="0 0 24 24"><path fill="#000" d="M21,7L9,19L3.5,13.5L4.91,12.09L9,16.17L19.59,5.59L21,7Z" /></svg>Chip</button>
+		<button type="button" class="chip filter outlined active"><svg viewBox="0 0 24 24"><path fill="#000" d="M21,7L9,19L3.5,13.5L4.91,12.09L9,16.17L19.59,5.59L21,7Z" /></svg>Selected</button>
+		<button type="button" class="chip filter outlined" disabled><svg viewBox="0 0 24 24"><path fill="#000" d="M21,7L9,19L3.5,13.5L4.91,12.09L9,16.17L19.59,5.59L21,7Z" /></svg>Disabled</button>
+		
+		<h3>Action chips</h3>
+		<h4>Solid</h4>
+		<button type="button" class="chip icon"><svg viewBox="0 0 24 24"><path fill="#666" d="M12,11.5A2.5,2.5 0 0,1 9.5,9A2.5,2.5 0 0,1 12,6.5A2.5,2.5 0 0,1 14.5,9A2.5,2.5 0 0,1 12,11.5M12,2A7,7 0 0,0 5,9C5,14.25 12,22 12,22C12,22 19,14.25 19,9A7,7 0 0,0 12,2Z" /></svg>Chip</button>
+		<button type="button" class="chip icon active"><svg viewBox="0 0 24 24"><path fill="#666" d="M12,11.5A2.5,2.5 0 0,1 9.5,9A2.5,2.5 0 0,1 12,6.5A2.5,2.5 0 0,1 14.5,9A2.5,2.5 0 0,1 12,11.5M12,2A7,7 0 0,0 5,9C5,14.25 12,22 12,22C12,22 19,14.25 19,9A7,7 0 0,0 12,2Z" /></svg>Selected</button>
+		<button type="button" class="chip icon" disabled><svg viewBox="0 0 24 24"><path fill="#666" d="M12,11.5A2.5,2.5 0 0,1 9.5,9A2.5,2.5 0 0,1 12,6.5A2.5,2.5 0 0,1 14.5,9A2.5,2.5 0 0,1 12,11.5M12,2A7,7 0 0,0 5,9C5,14.25 12,22 12,22C12,22 19,14.25 19,9A7,7 0 0,0 12,2Z" /></svg>Disabled</button>
+		<h4>Outlined</h4>
+		<button type="button" class="chip icon outlined"><svg viewBox="0 0 24 24"><path fill="#666" d="M12,20A7,7 0 0,1 5,13A7,7 0 0,1 12,6A7,7 0 0,1 19,13A7,7 0 0,1 12,20M12,4A9,9 0 0,0 3,13A9,9 0 0,0 12,22A9,9 0 0,0 21,13A9,9 0 0,0 12,4M12.5,8H11V14L15.75,16.85L16.5,15.62L12.5,13.25V8M7.88,3.39L6.6,1.86L2,5.71L3.29,7.24L7.88,3.39M22,5.72L17.4,1.86L16.11,3.39L20.71,7.25L22,5.72Z" /></svg>Chip</button>
+		<button type="button" class="chip icon outlined active"><svg viewBox="0 0 24 24"><path fill="#666" d="M12,20A7,7 0 0,1 5,13A7,7 0 0,1 12,6A7,7 0 0,1 19,13A7,7 0 0,1 12,20M12,4A9,9 0 0,0 3,13A9,9 0 0,0 12,22A9,9 0 0,0 21,13A9,9 0 0,0 12,4M12.5,8H11V14L15.75,16.85L16.5,15.62L12.5,13.25V8M7.88,3.39L6.6,1.86L2,5.71L3.29,7.24L7.88,3.39M22,5.72L17.4,1.86L16.11,3.39L20.71,7.25L22,5.72Z" /></svg>Selected</button>
+		<button type="button" class="chip icon outlined" disabled><svg viewBox="0 0 24 24"><path fill="#666" d="M12,20A7,7 0 0,1 5,13A7,7 0 0,1 12,6A7,7 0 0,1 19,13A7,7 0 0,1 12,20M12,4A9,9 0 0,0 3,13A9,9 0 0,0 12,22A9,9 0 0,0 21,13A9,9 0 0,0 12,4M12.5,8H11V14L15.75,16.85L16.5,15.62L12.5,13.25V8M7.88,3.39L6.6,1.86L2,5.71L3.29,7.24L7.88,3.39M22,5.72L17.4,1.86L16.11,3.39L20.71,7.25L22,5.72Z" /></svg>Disabled</button>
+		<script>
+			var chips = document.getElementsByTagName('button');
+			for (var i = 0; i < chips.length; i++) {
+				chips[i].onclick = function () {
+					this.classList.toggle('active');
+				};
+			}
+		</script>
+	</body>
+</html>

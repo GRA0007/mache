@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<title>Dialogs</title>
+		<meta name="viewport" content="width=device-width, initial-scale=1, minimum-scale=1">
+		
+		<!-- Supporting -->
+		<link rel="stylesheet" href="../styles/buttons.css" />
+		<link rel="stylesheet" href="../styles/selection_controls.css" />
+		
+		<link rel="stylesheet" href="../styles/dialogs.css" />
+	</head>
+	<body>
+		<h1>Dialogs</h1>
+		<h3>Simple</h3>
+		<div class="dialog min">
+			<span class="title">Dialog header</span>
+			<div class="accountPicker">
+				<div class="account" tabindex="0">
+					<img src="../res/sample_avatar.jpg" />
+					<span>user01@gmail.com</span>
+				</div>
+				<div class="account" tabindex="0">
+					<img src="../res/sample_avatar.jpg" />
+					<span>user02@gmail.com</span>
+				</div>
+				<div class="account" tabindex="0">
+					<img src="../res/new.svg" />
+					<span>Add account</span>
+				</div>
+			</div>
+		</div>
+		
+		<h3>Alert</h3>
+		<div class="dialog min">
+			<span class="body">Discard draft?</span>
+			<button type="button" class="text">Cancel</button>
+			<button type="button" class="text">Discard</button>
+		</div>
+		
+		<h3>Confirmation</h3>
+		<div class="dialog min">
+			<span class="title">Two-line<br>dialog header</span>
+			<span class="body">Lorem ipsum dolor sit amet, consectetur adipicing elit, sed do eiusmod tempur incidunt ut labore et dolore magna aliqua.</span>
+			<button type="button" class="text">Action 1</button>
+			<button type="button" class="text">Action 2</button>
+		</div>
+		
+		<h3>Confirmation (scrolling)</h3>
+		<div class="dialog min">
+			<span class="title">Dialog header</span>
+			<div class="scrolling">
+				<div class="option">
+					<input type="radio" name="radio" id="radio1" />
+					<label for="radio1"></label>
+					<span class="label">Item 1</span>
+				</div>
+				<div class="option">
+					<input type="radio" name="radio" id="radio2" />
+					<label for="radio2"></label>
+					<span class="label">Item 2</span>
+				</div>
+				<div class="option">
+					<input type="radio" name="radio" id="radio3" />
+					<label for="radio3"></label>
+					<span class="label">Item 3</span>
+				</div>
+				<div class="option">
+					<input type="radio" name="radio" id="radio4" checked />
+					<label for="radio4"></label>
+					<span class="label">Item 4</span>
+				</div>
+				<div class="option">
+					<input type="radio" name="radio" id="radio5" />
+					<label for="radio5"></label>
+					<span class="label">Item 5</span>
+				</div>
+				<div class="option">
+					<input type="radio" name="radio" id="radio6" />
+					<label for="radio6"></label>
+					<span class="label">Item 6</span>
+				</div>
+				<div class="option">
+					<input type="radio" name="radio" id="radio7" />
+					<label for="radio7"></label>
+					<span class="label">Item 7</span>
+				</div>
+				<div class="option">
+					<input type="radio" name="radio" id="radio8" />
+					<label for="radio8"></label>
+					<span class="label">Item 8</span>
+				</div>
+				<div class="option">
+					<input type="radio" name="radio" id="radio9" />
+					<label for="radio9"></label>
+					<span class="label">Item 9</span>
+				</div>
+				<div class="option">
+					<input type="radio" name="radio" id="radio10" />
+					<label for="radio10"></label>
+					<span class="label">Item 10</span>
+				</div>
+			</div>
+			<button type="button" class="text">Action 1</button>
+			<button type="button" class="text">Action 2</button>
+		</div>
+		
+		<script>
+			var options = document.querySelectorAll('.dialog .scrolling .option');
+			
+			for (var i = 0; i < options.length; i++) {
+				options[i].onclick = function() {
+					this.querySelector('input').checked = true;
+				};
+			}
+		</script>
+		
+		<h3>Confirmation (long actions)</h3>
+		<div class="dialog min">
+			<span class="title">Two-line<br>dialog header</span>
+			<span class="body">Lorem ipsum dolor sit amet, consectetur adipicing elit, sed do eiusmod tempur incidunt ut labore et dolore magna aliqua.</span>
+			<button type="button" class="text">Turn on speed boost</button><br>
+			<button type="button" class="text">No thanks</button>
+		</div>
+		
+		<h3>Desktop size</h3>
+		<div class="dialog">
+			<span class="title">Dialog header</span>
+			<span class="body">Lorem ipsum dolor sit amet, consectetur adipicing elit, sed do eiusmod tempur incidunt ut labore et dolore magna aliqua, ut enim.</span>
+			<button type="button" class="text">Action 1</button>
+			<button type="button" class="text">Action 2</button>
+		</div>
+	</body>
+</html>

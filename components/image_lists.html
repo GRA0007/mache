@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<title>Image lists</title>
+		<meta name="viewport" content="width=device-width, initial-scale=1, minimum-scale=1">
+		<link rel="stylesheet" href="../styles/image_lists.css" />
+		
+		<!-- For demo purposes -->
+		<style>
+			.imageList {
+				border:1px solid #888;
+			}
+		</style>
+	</head>
+	<body>
+		<h1>Image lists</h1>
+		<h3>Standard</h3>
+		<div class="imageList">
+			<img src="../res/sample_avatar.jpg" />
+			<img src="../res/sample_avatar.jpg" />
+			<img src="../res/sample_avatar.jpg" />
+			<img src="../res/sample_avatar.jpg" />
+			<img src="../res/sample_avatar.jpg" />
+			<img src="../res/sample_avatar.jpg" />
+		</div>
+		
+		<h3>Quilted</h3>
+		<div class="imageList quilted">
+			<img src="../res/sample_avatar.jpg" style="grid-row:1 / 3; grid-column:1 / 3;" />
+			<img src="../res/sample_avatar.jpg" />
+			<img src="../res/sample_avatar.jpg" />
+			<img src="../res/sample_avatar.jpg" style="grid-column:3 / 5;" />
+		</div>
+		
+		<h3>Masonry</h3>
+		<div class="imageList masonry">
+			<img src="../res/sample_avatar.jpg" style="grid-row:1 / 3; grid-column:1 / 3;" />
+			<img src="../res/sample_avatar.jpg" />
+			<img src="../res/sample_avatar.jpg" />
+			<img src="../res/sample_avatar.jpg" style="grid-column:3 / 5;" />
+		</div>
+	</body>
+</html>

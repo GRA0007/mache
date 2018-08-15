@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<title>Banners</title>
+		<meta name="viewport" content="width=device-width, initial-scale=1, minimum-scale=1">
+		
+		<!-- Supporting -->
+		<link rel="stylesheet" href="../styles/buttons.css" />
+		
+		<link rel="stylesheet" href="../styles/banners.css" />
+		
+		<!-- For demo purposes -->
+		<style>
+			@media screen and (min-width: 800px) {
+				.banner.large span:after {
+					content:' Three lines should be considered the maximum string length on desktop in order to keep messages short and actionable.';
+				}
+				body.dark {
+					background-color:#AAA;
+				}
+			}
+		</style>
+	</head>
+	<body>
+		<h1>Banners</h1>
+		<p><a href="#" onclick="document.body.classList.toggle('dark'); return false;">Click here</a> to make it easier to see the banners.</p>
+		<h3>Normal</h3>
+		<div class="banner">
+			<span>One line text string with one action.</span>
+			<button type="button" class="text">Action</button>
+		</div>
+		<h3>Large</h3>
+		<div class="banner large">
+			<span>Two line text string with two actions. One to two lines is preferable on mobile and tablet.</span>
+			<button type="button" class="text">Action</button>
+			<button type="button" class="text">Action</button>
+		</div>
+		<h3>Icon</h3>
+		<div class="banner large image">
+			<img src="../res/sample_avatar.jpg" />
+			<span>Two line text string with two actions. One to two lines is preferable on mobile and tablet.</span>
+			<button type="button" class="text">Action</button>
+			<button type="button" class="text">Action</button>
+		</div>
+	</body>
+</html>

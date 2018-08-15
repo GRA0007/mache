@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<title>Tabs</title>
+		<meta name="viewport" content="width=device-width, initial-scale=1, minimum-scale=1">		
+		<link rel="stylesheet" href="../styles/tabs.css" />
+		
+		<!-- For demo purposes -->
+		<style>
+			.tabs {
+				width:360px;
+			}
+			.tabs .tab {
+				flex:1;
+			}
+		</style>
+	</head>
+	<body>
+		<h1>Tabs</h1>
+		<h3>Fixed</h3>
+		<div class="tabs">
+			<a class="tab active"><span>Item one</span></a>
+			<a class="tab"><span>Item two</span></a>
+			<a class="tab"><span>Item three</span></a>
+		</div>
+		<br>
+		<div class="tabs colored">
+			<a class="tab active"><span>Item one</span></a>
+			<a class="tab"><span>Item two</span></a>
+			<a class="tab"><span>Item three</span></a>
+		</div>
+		<br><br>
+		
+		<div class="tabs">
+			<a class="tab active">
+				<svg viewBox="0 0 24 24"><path d="M6.62,10.79C8.06,13.62 10.38,15.94 13.21,17.38L15.41,15.18C15.69,14.9 16.08,14.82 16.43,14.93C17.55,15.3 18.75,15.5 20,15.5A1,1 0 0,1 21,16.5V20A1,1 0 0,1 20,21A17,17 0 0,1 3,4A1,1 0 0,1 4,3H7.5A1,1 0 0,1 8.5,4C8.5,5.25 8.7,6.45 9.07,7.57C9.18,7.92 9.1,8.31 8.82,8.59L6.62,10.79Z" /></svg>
+			</a>
+			<a class="tab">
+				<svg viewBox="0 0 24 24"><path d="M12,21.35L10.55,20.03C5.4,15.36 2,12.27 2,8.5C2,5.41 4.42,3 7.5,3C9.24,3 10.91,3.81 12,5.08C13.09,3.81 14.76,3 16.5,3C19.58,3 22,5.41 22,8.5C22,12.27 18.6,15.36 13.45,20.03L12,21.35Z" /></svg>
+			</a>
+			<a class="tab">
+				<svg viewBox="0 0 24 24"><path d="M12,11.5A2.5,2.5 0 0,1 9.5,9A2.5,2.5 0 0,1 12,6.5A2.5,2.5 0 0,1 14.5,9A2.5,2.5 0 0,1 12,11.5M12,2A7,7 0 0,0 5,9C5,14.25 12,22 12,22C12,22 19,14.25 19,9A7,7 0 0,0 12,2Z" /></svg>
+			</a>
+		</div>
+		<br>
+		<div class="tabs colored">
+			<a class="tab active">
+				<svg viewBox="0 0 24 24"><path d="M6.62,10.79C8.06,13.62 10.38,15.94 13.21,17.38L15.41,15.18C15.69,14.9 16.08,14.82 16.43,14.93C17.55,15.3 18.75,15.5 20,15.5A1,1 0 0,1 21,16.5V20A1,1 0 0,1 20,21A17,17 0 0,1 3,4A1,1 0 0,1 4,3H7.5A1,1 0 0,1 8.5,4C8.5,5.25 8.7,6.45 9.07,7.57C9.18,7.92 9.1,8.31 8.82,8.59L6.62,10.79Z" /></svg>
+			</a>
+			<a class="tab">
+				<svg viewBox="0 0 24 24"><path d="M12,21.35L10.55,20.03C5.4,15.36 2,12.27 2,8.5C2,5.41 4.42,3 7.5,3C9.24,3 10.91,3.81 12,5.08C13.09,3.81 14.76,3 16.5,3C19.58,3 22,5.41 22,8.5C22,12.27 18.6,15.36 13.45,20.03L12,21.35Z" /></svg>
+			</a>
+			<a class="tab">
+				<svg viewBox="0 0 24 24"><path d="M12,11.5A2.5,2.5 0 0,1 9.5,9A2.5,2.5 0 0,1 12,6.5A2.5,2.5 0 0,1 14.5,9A2.5,2.5 0 0,1 12,11.5M12,2A7,7 0 0,0 5,9C5,14.25 12,22 12,22C12,22 19,14.25 19,9A7,7 0 0,0 12,2Z" /></svg>
+			</a>
+		</div>
+		<br><br>
+		
+		<div class="tabs">
+			<a class="tab active">
+				<svg viewBox="0 0 24 24"><path d="M6.62,10.79C8.06,13.62 10.38,15.94 13.21,17.38L15.41,15.18C15.69,14.9 16.08,14.82 16.43,14.93C17.55,15.3 18.75,15.5 20,15.5A1,1 0 0,1 21,16.5V20A1,1 0 0,1 20,21A17,17 0 0,1 3,4A1,1 0 0,1 4,3H7.5A1,1 0 0,1 8.5,4C8.5,5.25 8.7,6.45 9.07,7.57C9.18,7.92 9.1,8.31 8.82,8.59L6.62,10.79Z" /></svg>
+				<span>Item one</span>
+			</a>
+			<a class="tab">
+				<svg viewBox="0 0 24 24"><path d="M12,21.35L10.55,20.03C5.4,15.36 2,12.27 2,8.5C2,5.41 4.42,3 7.5,3C9.24,3 10.91,3.81 12,5.08C13.09,3.81 14.76,3 16.5,3C19.58,3 22,5.41 22,8.5C22,12.27 18.6,15.36 13.45,20.03L12,21.35Z" /></svg>
+				<span>Item two</span>
+			</a>
+			<a class="tab">
+				<svg viewBox="0 0 24 24"><path d="M12,11.5A2.5,2.5 0 0,1 9.5,9A2.5,2.5 0 0,1 12,6.5A2.5,2.5 0 0,1 14.5,9A2.5,2.5 0 0,1 12,11.5M12,2A7,7 0 0,0 5,9C5,14.25 12,22 12,22C12,22 19,14.25 19,9A7,7 0 0,0 12,2Z" /></svg>
+				<span>Item three</span>
+			</a>
+		</div>
+		<br>
+		<div class="tabs colored">
+			<a class="tab active">
+				<svg viewBox="0 0 24 24"><path d="M6.62,10.79C8.06,13.62 10.38,15.94 13.21,17.38L15.41,15.18C15.69,14.9 16.08,14.82 16.43,14.93C17.55,15.3 18.75,15.5 20,15.5A1,1 0 0,1 21,16.5V20A1,1 0 0,1 20,21A17,17 0 0,1 3,4A1,1 0 0,1 4,3H7.5A1,1 0 0,1 8.5,4C8.5,5.25 8.7,6.45 9.07,7.57C9.18,7.92 9.1,8.31 8.82,8.59L6.62,10.79Z" /></svg>
+				<span>Item one</span>
+			</a>
+			<a class="tab">
+				<svg viewBox="0 0 24 24"><path d="M12,21.35L10.55,20.03C5.4,15.36 2,12.27 2,8.5C2,5.41 4.42,3 7.5,3C9.24,3 10.91,3.81 12,5.08C13.09,3.81 14.76,3 16.5,3C19.58,3 22,5.41 22,8.5C22,12.27 18.6,15.36 13.45,20.03L12,21.35Z" /></svg>
+				<span>Item two</span>
+			</a>
+			<a class="tab">
+				<svg viewBox="0 0 24 24"><path d="M12,11.5A2.5,2.5 0 0,1 9.5,9A2.5,2.5 0 0,1 12,6.5A2.5,2.5 0 0,1 14.5,9A2.5,2.5 0 0,1 12,11.5M12,2A7,7 0 0,0 5,9C5,14.25 12,22 12,22C12,22 19,14.25 19,9A7,7 0 0,0 12,2Z" /></svg>
+				<span>Item three</span>
+			</a>
+		</div>
+		
+		<h3>Scrollable</h3>
+		<div class="tabs scroll">
+			<a class="tab active"><span>Item one</span></a>
+			<a class="tab"><span>Item two</span></a>
+			<a class="tab"><span>Item three</span></a>
+			<a class="tab"><span>Item four</span></a>
+			<a class="tab"><span>Item five</span></a>
+			<a class="tab"><span>Item six</span></a>
+		</div>
+		<br>
+		<div class="tabs colored scroll">
+			<a class="tab active"><span>Item one</span></a>
+			<a class="tab"><span>Item two</span></a>
+			<a class="tab"><span>Item three</span></a>
+			<a class="tab"><span>Item four</span></a>
+			<a class="tab"><span>Item five</span></a>
+			<a class="tab"><span>Item six</span></a>
+		</div>
+		
+		<script>
+			var tabs = document.getElementsByTagName('a');
+			for (var i = 0; i < tabs.length; i++) {
+				tabs[i].onclick = function () {
+					var innerTabs = this.parentElement.querySelectorAll('a');
+					for (var j = 0; j < innerTabs.length; j++) {
+						innerTabs[j].classList.remove('active');
+					}
+					this.classList.add('active');
+				};
+			}
+		</script>
+	</body>
+</html>

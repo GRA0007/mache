@@ -1,0 +1,117 @@
+.scrim {
+	position:fixed;
+	top:0; right:0; bottom:0; left:0;
+	background-color:rgba(0,0,0,.32);
+	z-index:100;
+	transition:opacity 0.3s;
+	opacity:0;
+	pointer-events:none;
+}
+.scrim.open {
+	opacity:1;
+	pointer-events:all;
+}
+
+nav.drawer {
+	background-color:#FFF;
+	height:100%;
+	width:320px;
+	max-width:90vw;
+	position:fixed;
+	top:0;
+	left:0;
+	z-index:200;
+	transform:translateX(-106%);
+	transition:transform 0.3s;
+	box-sizing:border-box;
+	box-shadow:1px 0 10px 0 rgba(0,0,0,.2);
+	overflow-y:auto;
+}
+nav.drawer.open {
+	transform:translateX(0%);
+}
+
+nav.drawer .title {
+	font-size:20px;
+	color:#000000de;
+	font-weight:600;
+	padding:24px 16px 0;
+	display:block;
+}
+nav.drawer .subtext {
+	font-size:13px;
+	font-weight:500;
+	color:#0000008a;
+	padding:8px 16px 18px;
+	display:block;
+}
+nav.drawer .item {
+	text-decoration:none;
+	color:inherit;
+	height:40px;
+	display:flex;
+	align-items:center;
+	margin:0 8px 8px;
+	border-radius:5px;
+	box-sizing:border-box;
+	width:100%;
+	width:calc(100% - 16px);
+	transition:background-color 0.2s, color 0.2s;
+}
+nav.drawer .item.active {
+	background-color:#ece0fd;
+	color:#6200EA;
+}
+nav.drawer .item svg {
+	height:24px;
+	width:24px;
+	fill:#757575;
+	padding:0 8px;
+	transition:fill 0.2s;
+}
+nav.drawer .item.active svg {
+	fill:#6200EA;
+}
+nav.drawer .item svg path {
+	fill:inherit;
+}
+nav.drawer .item span {
+	display:block;
+	padding-left:24px;
+	font-size:15px;
+	font-weight:500;
+}
+nav.drawer .sectionTitle {
+	font-size:13px;
+	font-weight:500;
+	color:#0000008a;
+	padding:12px 16px 8px;
+	display:block;
+}
+
+nav.drawer hr {
+	margin-bottom:8px;
+}
+
+
+nav.drawer.bottom {
+	background-color:#FFF;
+	min-height:56px;
+	max-height:70vh;
+	width:100%;
+	max-width:600px;
+	position:fixed;
+	bottom:0;
+	left:50%;
+	top:initial;
+	z-index:200;
+	transform:translate(-50%, 106%);
+	transition:transform 0.3s;
+	box-sizing:border-box;
+	box-shadow:0 -1px 10px 0 rgba(0,0,0,.2);
+	border-top-left-radius:5px;
+	border-top-right-radius:5px;
+}
+nav.drawer.bottom.open {
+	transform:translate(-50%, 0%);
+}

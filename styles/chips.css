@@ -1,0 +1,189 @@
+button.chip {
+	height:32px;
+	display:inline-flex;
+	align-items:center;
+	vertical-align:middle;
+	margin-right:8px;
+	padding:0 12px;
+	position:relative;
+	
+	font-family:inherit;
+	font-size:14px;
+	font-weight:400;
+	
+	background-color:#e0e0e0;
+	border:0;
+	border-radius:50px;
+	
+	cursor:pointer;
+	white-space:nowrap;
+	
+	transition:background-color 0.2s, box-shadow 0.2s;
+	overflow:hidden;
+}
+button.chip[disabled] {
+	opacity:.5;
+	cursor:default;
+}
+button.chip.outlined {
+	background-color:#FFF;
+	border:1px solid #c4c4c4;
+}
+button.chip.outlined[disabled] {
+	border:1px solid #888;
+}
+button.chip:hover {
+	background-color:#d8d8d8;
+}
+button.chip.outlined:hover {
+	background-color:#f5f5f5;
+}
+button.chip[disabled]:hover {
+	background-color:#e0e0e0;
+}
+button.chip.outlined[disabled]:hover {
+	background-color:#FFF;
+}
+button.chip:focus,
+button.chip.active {
+	background-color:#e2cffc;
+	outline:none;
+}
+button.chip.active,
+button.chip.outlined.active:focus {
+	color:#6200EA;
+}
+button.chip.image:focus,
+button.chip.outlined:focus,
+button.chip.icon:focus,
+button.chip.dismissable:focus,
+button.chip.filter:focus,
+button.chip.image.active,
+button.chip.icon.active,
+button.chip.dismissable.active,
+button.chip.filter.active {
+	background-color:#c7c7c7;
+	color:#000;
+}
+button.chip.outlined.active {
+	background-color:#ece1fd;
+	border-color:#ccaef9;
+}
+button.chip.image.outlined:focus,
+button.chip.icon.outlined:focus,
+button.chip.dismissable.outlined:focus,
+button.chip.filter.outlined:focus,
+button.chip.image.outlined.active,
+button.chip.icon.outlined.active,
+button.chip.dismissable.outlined.active,
+button.chip.filter.outlined.active {
+	background-color:#e0e0e0;
+	color:#000;
+	border-color:#c4c4c4;
+}
+button.chip:active {
+	box-shadow:0 2px 7px 0 rgba(0,0,0,.4);
+}
+button.chip.dragged {
+	box-shadow:0 3px 10px 1px rgba(0,0,0,.4);
+}
+button.chip.image,
+button.chip.icon {
+	padding-left:4px;
+}
+button.chip.image img {
+	height:24px;
+	width:24px;
+	border-radius:50px;
+	object-fit:cover;
+	display:inline-block;
+	margin-right:8px;
+}
+button.chip.image:after {
+	content:'';
+	height:24px;
+	width:24px;
+	position:absolute;
+	border-radius:50px;
+	display:block;
+	top:50%;
+	transform:translateY(-50%);
+	left:4px;
+	background-size:18px;
+	background-position:center;
+	background-repeat:no-repeat;
+	background-image:url('data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHhtbG5zOnhsaW5rPSJodHRwOi8vd3d3LnczLm9yZy8xOTk5L3hsaW5rIiB2ZXJzaW9uPSIxLjEiIHdpZHRoPSIyNCIgaGVpZ2h0PSIyNCIgdmlld0JveD0iMCAwIDI0IDI0Ij48cGF0aCAvPjwvc3ZnPg==');
+	transition:background-color 0.2s, background-image 0.2s;
+}
+button.chip.image.active:after {
+	background-color:rgba(0,0,0,.3);
+	background-image:url('data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIGhlaWdodD0iMjQiIHdpZHRoPSIyNCIgdmlld0JveD0iMCAwIDI0IDI0Ij48cGF0aCBmaWxsPSIjRkZGRkZGIiBkPSJNMjEsN0w5LDE5TDMuNSwxMy41TDQuOTEsMTIuMDlMOSwxNi4xN0wxOS41OSw1LjU5TDIxLDdaIiAvPjwvc3ZnPg==');
+}
+button.chip.icon svg {
+	height:20px;
+	width:20px;
+	margin-right:8px;
+	margin-left:2px;
+}
+button.chip.filter {
+	padding:0 12px 0 0;
+}
+button.chip.filter svg {
+	opacity:0;
+	margin-left:-20px;
+	transition:margin 0.2s, opacity 0.2s;
+	height:18px;
+	width:18px;
+	margin-right:12px;
+}
+button.chip.filter.active svg {
+	opacity:1;
+	margin-left:6px;
+	margin-right:4px;
+}
+
+button.chip.dismissable svg:nth-child(2) {
+	height:18px;
+	width:18px;
+	margin-right:-4px;
+	margin-left:8px;
+	fill:#666;
+	transition:fill 0.2s;
+	cursor:default;
+}
+button.chip.outlined.dismissable svg:nth-child(2) {
+	fill:#9e9e9e;
+}
+button.chip.dismissable svg:nth-child(2) path {
+	fill:inherit;
+}
+button.chip.dismissable svg:nth-child(2):hover {
+	fill:#000;
+}
+button.chip.outlined.dismissable svg:nth-child(2):hover {
+	fill:#666;
+}
+button.chip.dismissable[disabled] svg:nth-child(2):hover {
+	fill:#666;
+	pointer-events:none;
+}
+button.chip.outlined.dismissable[disabled] svg:nth-child(2):hover {
+	fill:#9e9e9e;
+	pointer-events:none;
+}
+button.chip.error,
+button.chip.error:focus {
+	background-color:#f0cfd6;
+}
+button.chip.outlined.error,
+button.chip.outlined.error:focus {
+	background-color:#f5e2e7;
+	border-color:#eab9c2;
+	color:#ad3449;
+}
+button.chip.error.dismissable svg:nth-child(2) {
+	fill:#ce5e73;
+}
+button.chip.error.dismissable svg:nth-child(2):hover {
+	fill:#ad3449;
+}

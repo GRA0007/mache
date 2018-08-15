@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<title>Text fields</title>
+		<meta name="viewport" content="width=device-width, initial-scale=1, minimum-scale=1">
+		<link rel="stylesheet" href="../styles/text_fields.css" />
+	</head>
+	<body>
+		<h1>Text fields</h1>
+		<h3>Filled</h3>
+		<div class="field" data-helper="Helper text">
+			<input type="text" id="input1" placeholder=" " />
+			<label for="input1">Label</label>
+		</div>
+		<div class="field error" data-helper="Error message">
+			<input type="text" id="input2" value="Wrong input" placeholder=" " />
+			<label for="input2">Label</label>
+		</div>
+		<div class="field">
+			<input type="text" id="input3" placeholder=" " disabled />
+			<label for="input3">Label</label>
+		</div>
+		
+		<h3>Outlined</h3>
+		<div class="field outlined" data-helper="Helper text">
+			<input type="text" id="input4" placeholder=" " />
+			<label for="input4">Label</label>
+		</div>
+		<div class="field outlined error" data-helper="Error message">
+			<input type="text" id="input5" value="Wrong input" placeholder=" " />
+			<label for="input5">Label</label>
+		</div>
+		<div class="field outlined">
+			<input type="text" id="input6" placeholder=" "  disabled />
+			<label for="input6">Label</label>
+		</div>
+	</body>
+</html>

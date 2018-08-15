@@ -1,0 +1,49 @@
+.appBar.top {
+	height:56px;
+	width:100%;
+	background-color:#6200EA;
+	display:flex;
+	align-items:start;
+	box-sizing:border-box;
+	padding:12px 16px;
+	position:relative;
+	box-shadow:0 2px 8px 0 rgba(0,0,0,.4);
+	transition:height 0.3s;
+}
+.appBar.top button.icon {
+	margin-left:24px;
+}
+.appBar.top button.icon:first-child {
+	margin-left:0;
+}
+.appBar.top button.icon:hover {
+	box-shadow:0 0 0 8px rgba(255,255,255,.2);
+	background-color:rgba(255,255,255,.2);
+}
+.appBar.top button.icon:focus {
+	box-shadow:0 0 0 8px rgba(255,255,255,.3);
+	background-color:rgba(255,255,255,.3);
+}
+.appBar.top button.icon:active {
+	box-shadow:0 0 0 8px rgba(255,255,255,.4);
+	background-color:rgba(255,255,255,.4);
+}
+.appBar.top .title {
+	flex:1;
+	padding-left:32px;
+	color:#FFF;
+	font-size:20px;
+	align-self:flex-end;
+	height:32px;
+	display:flex;
+	align-items:center;
+	transition:font-size 0.3s, padding 0.3s;
+}
+
+.appBar.top.extended {
+	height:128px;
+}
+.appBar.top.extended .title {
+	font-size:24px;
+	padding-bottom:16px;
+}

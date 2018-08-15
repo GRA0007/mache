@@ -1,0 +1,50 @@
+.appBar.bottom {
+	height:56px;
+	width:100%;
+	background-color:#6200EA;
+	display:flex;
+	align-items:center;
+	box-sizing:border-box;
+	padding:0 16px;
+	position:relative;
+}
+.appBar.bottom.start {
+	justify-content:flex-end;
+}
+.appBar.bottom.cutout {
+	background:radial-gradient(circle at top, transparent 0%, transparent 36px, #6200EA 36px, #6200EA 100%);
+}
+.appBar.bottom button.icon {
+	margin-left:24px;
+}
+.appBar.bottom button.icon:first-child {
+	margin-left:0;
+}
+.appBar.bottom button.icon:hover {
+	box-shadow:0 0 0 8px rgba(255,255,255,.2);
+	background-color:rgba(255,255,255,.2);
+}
+.appBar.bottom button.icon:focus {
+	box-shadow:0 0 0 8px rgba(255,255,255,.3);
+	background-color:rgba(255,255,255,.3);
+}
+.appBar.bottom button.icon:active {
+	box-shadow:0 0 0 8px rgba(255,255,255,.4);
+	background-color:rgba(255,255,255,.4);
+}
+
+.appBar.bottom button.fab {
+	position:absolute;
+	top:-28px;
+	left:50%;
+	transform:translateX(-50%);
+}
+.appBar.bottom.start button.fab {
+	left:16px;
+	transform:none;
+}
+.appBar.bottom.end button.fab {
+	left:initial;
+	transform:none;
+	right:16px;
+}

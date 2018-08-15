@@ -1,0 +1,128 @@
+.field {
+	position:relative;
+	height:56px;
+	width:280px;
+	margin:10px 0 30px;
+}
+.field input {
+	font-family:inherit;
+	color:#000;
+	font-size:16px;
+	font-weight:400;
+	background:none;
+	border:0;
+	border-top-left-radius:5px;
+	border-top-right-radius:5px;
+	border-bottom:1px solid #7f7f7f;
+	background-color:#e8e8e8;
+	height:56px;
+	width:280px;
+	padding:14px 12px 0;
+	box-sizing:border-box;
+	transition:border 0.15s, background-color 0.15s;
+}
+.field.outlined input {
+	background-color:transparent;
+	border-radius:5px;
+	border:1px solid #757575;
+	padding:0 12px;
+}
+.field label {
+	color:#585858;
+	font-size:16px;
+	position:absolute;
+	white-space:nowrap;
+	user-select:none;
+	top:50%;
+	left:12px;
+	transform:translateY(-50%);
+	pointer-events:none;
+	transition:font-size 0.15s, top 0.15s, left 0.15s, transform 0.15s, color 0.15s, padding 0.15s;
+}
+.field input[disabled] + label {
+	color:#8a8a8a;
+}
+.field.outlined input[disabled] {
+	border:1px solid #bababa;
+	color:#aaaaaa;
+}
+.field input:hover {
+	background-color:#dedede;
+}
+.field.outlined input:hover {
+	border:1px solid #404347;
+	background-color:transparent;
+}
+.field input[disabled]:hover {
+	background-color:#e8e8e8;
+}
+.field.outlined input[disabled]:hover {
+	background-color:transparent;
+	border:1px solid #bababa;
+}
+.field input:focus {
+	background-color:#cbcbcb;
+}
+.field.outlined input:focus {
+	background-color:transparent;
+}
+.field input:focus {
+	border-bottom:2px solid #6200EA;
+	outline:none;
+}
+.field input:not(:placeholder-shown) {
+	border-bottom:2px solid #6200EA;
+	outline:none;
+}
+.field.outlined input:focus {
+	border:2px solid #6200EA;
+}
+.field.outlined input:not(:placeholder-shown) {
+	border:2px solid #6200EA;
+}
+.field input:focus + label {
+	font-size:12px;
+	transform:none;
+	top:8px;
+	color:#6200EA;
+}
+.field input:not(:placeholder-shown) + label {
+	font-size:12px;
+	transform:none;
+	top:8px;
+	color:#6200EA;
+}
+.field.outlined input:focus + label {
+	top:-8px;
+	left:10px;
+	background-color:#FFF;
+	padding:2px 4px;
+}
+.field.outlined input:not(:placeholder-shown) + label {
+	top:-8px;
+	left:10px;
+	background-color:#FFF;
+	padding:2px 4px;
+}
+.field:after {
+	content:attr(data-helper);
+	padding:5px 12px;
+	font-size:12px;
+	color:#585858;
+}
+
+.field.error input {
+	border-bottom:2px solid #b00020;
+}
+.field.outlined.error input {
+	border:2px solid #b00020;
+}
+.field.error input:focus + label {
+	color:#b00020;
+}
+.field.error input:not(:placeholder-shown) + label {
+	color:#b00020;
+}
+.field.error:after {
+	color:#b00020;
+}
