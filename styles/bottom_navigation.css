@@ -1,4 +1,4 @@
-nav.bottom {
+nav.nav.bottom {
 	height:56px;
 	width:100%;
 	background-color:#FFF;
@@ -6,8 +6,9 @@ nav.bottom {
 	justify-content:center;
 	box-shadow:0 -3px 6px 0 rgba(0,0,0,.2);
 }
-nav.bottom button.bottomItem {
+nav.nav.bottom button.bottomItem {
 	background-color:transparent;
+	border-radius:500px;
 	color:#777;
 	fill:#777;
 	
@@ -21,25 +22,32 @@ nav.bottom button.bottomItem {
 	border:0;
 	cursor:pointer;
 	
-	transition:width 0.2s, color 0.2s, fill 0.2s;
+	transition:width 0.2s, color 0.2s, fill 0.2s, background-color 0.2s;
 }
-nav.bottom button.bottomItem.active {
+nav.nav.bottom button.bottomItem:focus {
+	outline:none;
+	background-color:rgba(0,0,0,.1);
+}
+nav.nav.bottom.colored button.bottomItem:focus {
+	background-color:rgba(255,255,255,.2);
+}
+nav.nav.bottom button.bottomItem.active {
 	color:#6200EA;
 	fill:#6200EA;
 }
-nav.bottom button.bottomItem svg {
+nav.nav.bottom button.bottomItem svg {
 	height:24px;
 	width:24px;
 	fill:inherit;
 	transition:transform 0.2s;
 }
-nav.bottom.dynamic button.bottomItem svg {
+nav.nav.bottom.dynamic button.bottomItem svg {
 	transform:translateY(8px);
 }
-nav.bottom.dynamic button.bottomItem.active svg {
+nav.nav.bottom.dynamic button.bottomItem.active svg {
 	transform:translateY(0);
 }
-nav.bottom button.bottomItem span {
+nav.nav.bottom button.bottomItem span {
 	display:block;
 	font-family:inherit;
 	font-size:12px;
@@ -47,25 +55,25 @@ nav.bottom button.bottomItem span {
 	font-weight:500;
 	transition:opacity 0.2s;
 }
-nav.bottom.dynamic button.bottomItem span {
+nav.nav.bottom.dynamic button.bottomItem span {
 	opacity:0;
 }
-nav.bottom.dynamic button.bottomItem.active span {
+nav.nav.bottom.dynamic button.bottomItem.active span {
 	opacity:1;
 }
-nav.bottom button.bottomItem svg path {
+nav.nav.bottom button.bottomItem svg path {
 	fill:inherit;
 }
 
-nav.bottom.colored {
+nav.nav.bottom.colored {
 	background-color:#6200EA;
 }
-nav.bottom.colored button.bottomItem {
+nav.nav.bottom.colored button.bottomItem {
 	background-color:transparent;
 	color:rgba(255,255,255,.5);
 	fill:rgba(255,255,255,.5);
 }
-nav.bottom.colored button.bottomItem.active {
+nav.nav.bottom.colored button.bottomItem.active {
 	color:#FFF;
 	fill:#FFF;
 }
