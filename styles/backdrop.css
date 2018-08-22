@@ -1,0 +1,77 @@
+.backdrop {
+	position:relative;
+	background-color:#6200EA;
+	background-color:rgba(var(--color-primary, 98, 0, 234),1);
+}
+.backdrop .back {
+	padding-bottom:30px;
+}
+.backdrop .back .nav {
+	height:56px;
+	width:100%;
+	display:flex;
+	align-items:start;
+	box-sizing:border-box;
+	padding:12px 16px;
+}
+.backdrop .back .nav button.icon {
+	margin-left:24px;
+}
+.backdrop .back .nav button.icon svg {
+	fill:#FFF;
+	fill:rgba(var(--color-text, 255, 255, 255),1);
+}
+.backdrop .back .nav button.icon:first-child {
+	margin-left:0;
+}
+.backdrop .back .nav button.icon:hover {
+	box-shadow:0 0 0 8px rgba(255,255,255,.15);
+	box-shadow:0 0 0 8px rgba(var(--color-text, 255, 255, 255),.15);
+	background-color:rgba(255,255,255,.15);
+	background-color:rgba(var(--color-text, 255, 255, 255),.15);
+}
+.backdrop .back .nav button.icon:focus {
+	box-shadow:0 0 0 8px rgba(255,255,255,.23);
+	box-shadow:0 0 0 8px rgba(var(--color-text, 255, 255, 255),.23);
+	background-color:rgba(255,255,255,.23);
+	background-color:rgba(var(--color-text, 255, 255, 255),.23);
+}
+.backdrop .back .nav button.icon:active {
+	box-shadow:0 0 0 8px rgba(255,255,255,.34);
+	box-shadow:0 0 0 8px rgba(var(--color-text, 255, 255, 255),.34);
+	background-color:rgba(255,255,255,.34);
+	background-color:rgba(var(--color-text, 255, 255, 255),.34);
+}
+.backdrop .back .nav .title {
+	flex:1;
+	padding-left:32px;
+	color:#FFF;
+	color:rgba(var(--color-text, 255, 255, 255),1);
+	font-size:20px;
+	align-self:flex-end;
+	height:32px;
+	display:flex;
+	align-items:center;
+}
+
+.backdrop .front {
+	background-color:#FFF;
+	border-top-left-radius:20px;
+	border-top-right-radius:20px;
+	position:absolute;
+	top:56px;
+	width:100%;
+	left:0;
+	right:0;
+	transition:top 0.3s;
+}
+.backdrop .front .subheader {
+	color:#000000de;
+	font-size:16px;
+	padding:20px 16px;
+	display:block;
+}
+.backdrop.open .front {
+	top:90%;
+	top:calc(100% - 30px);
+}
