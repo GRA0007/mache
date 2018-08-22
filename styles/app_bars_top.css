@@ -2,6 +2,7 @@
 	height:56px;
 	width:100%;
 	background-color:#6200EA;
+	background-color:rgba(var(--color-primary, 98, 0, 234),1);
 	display:flex;
 	align-items:start;
 	box-sizing:border-box;
@@ -13,25 +14,36 @@
 .appBar.top button.icon {
 	margin-left:24px;
 }
+.appBar.top button.icon svg {
+	fill:#FFF;
+	fill:rgba(var(--color-text, 255, 255, 255),1);
+}
 .appBar.top button.icon:first-child {
 	margin-left:0;
 }
 .appBar.top button.icon:hover {
-	box-shadow:0 0 0 8px rgba(255,255,255,.2);
-	background-color:rgba(255,255,255,.2);
+	box-shadow:0 0 0 8px rgba(255,255,255,.15);
+	box-shadow:0 0 0 8px rgba(var(--color-text, 255, 255, 255),.15);
+	background-color:rgba(255,255,255,.15);
+	background-color:rgba(var(--color-text, 255, 255, 255),.15);
 }
 .appBar.top button.icon:focus {
-	box-shadow:0 0 0 8px rgba(255,255,255,.3);
-	background-color:rgba(255,255,255,.3);
+	box-shadow:0 0 0 8px rgba(255,255,255,.23);
+	box-shadow:0 0 0 8px rgba(var(--color-text, 255, 255, 255),.23);
+	background-color:rgba(255,255,255,.23);
+	background-color:rgba(var(--color-text, 255, 255, 255),.23);
 }
 .appBar.top button.icon:active {
-	box-shadow:0 0 0 8px rgba(255,255,255,.4);
-	background-color:rgba(255,255,255,.4);
+	box-shadow:0 0 0 8px rgba(255,255,255,.34);
+	box-shadow:0 0 0 8px rgba(var(--color-text, 255, 255, 255),.34);
+	background-color:rgba(255,255,255,.34);
+	background-color:rgba(var(--color-text, 255, 255, 255),.34);
 }
 .appBar.top .title {
 	flex:1;
 	padding-left:32px;
 	color:#FFF;
+	color:rgba(var(--color-text, 255, 255, 255),1);
 	font-size:20px;
 	align-self:flex-end;
 	height:32px;

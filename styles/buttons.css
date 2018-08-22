@@ -2,7 +2,9 @@ button.contained,
 button.outlined,
 button.text {
 	background-color:#6200EA;
+	background-color:rgba(var(--color-primary, 98, 0, 234),1);
 	color:#FFF;
+	color:rgba(var(--color-text, 255, 255, 255),1);
 	box-shadow:0 2px 3px 0 rgba(0,0,0,.3);
 	
 	font-family:inherit;
@@ -22,7 +24,7 @@ button.text {
 	text-transform:uppercase;
 	white-space:nowrap;
 	
-	transition:background-color 0.2s, box-shadow 0.2s;
+	transition:background-color 0.2s, box-shadow 0.2s, filter 0.2s;
 }
 button.contained svg,
 button.outlined svg,
@@ -31,6 +33,18 @@ button.text svg {
 	width:18px;
 	margin-left:-4px;
 	padding-right:8px;
+	fill:#FFF;
+	fill:rgba(var(--color-text, 255, 255, 255),1);
+}
+button.outlined svg,
+button.text svg {
+	fill:#6200EA;
+	fill:rgba(var(--color-text-primary, 98, 0, 234),1);
+}
+button.contained svg path,
+button.outlined svg path,
+button.text svg path {
+	fill:inherit;
 }
 button.contained[disabled] {
 	cursor:default;
@@ -46,11 +60,15 @@ button.outlined[disabled]:hover,
 button.text[disabled]:hover {
 	box-shadow:none;
 }
+button.contained:focus {
+	filter:brightness(115%);
+}
 button.contained:focus,
 button.outlined:focus,
 button.text:focus {
 	outline:none;
 	background-color:#873df2;
+	background-color:rgba(var(--color-primary, 98, 0, 234),1);
 }
 button.contained:active {
 	box-shadow:0 4px 16px 0 rgba(0,0,0,.6);
@@ -61,6 +79,7 @@ button.text {
 	background-color:transparent;
 	box-shadow:none;
 	color:#6200EA;
+	color:rgba(var(--color-text-primary, 98, 0, 234),1);
 }
 button.outlined {
 	border:1px solid #b0b0b0;
@@ -73,6 +92,7 @@ button.text[disabled] {
 button.outlined:hover,
 button.text:hover {
 	background-color:rgba(179,136,255,.2);
+	background-color:rgba(var(--color-primary, 98, 0, 234),.1);
 }
 button.outlined[disabled]:hover,
 button.text[disabled]:hover {
@@ -81,6 +101,7 @@ button.text[disabled]:hover {
 button.outlined:focus,
 button.text:focus {
 	background-color:rgba(179,136,255,.4);
+	background-color:rgba(var(--color-primary, 98, 0, 234),.3);
 }
 
 .toggleRow {
@@ -147,6 +168,10 @@ button.icon svg {
 	width:24px;
 	padding:4px;
 	vertical-align:middle;
+	fill:#666;
+}
+button.icon svg path {
+	fill:inherit;
 }
 button.icon[disabled] {
 	opacity:.6;

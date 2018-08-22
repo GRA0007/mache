@@ -33,7 +33,9 @@ nav.nav.bottom.colored button.bottomItem:focus {
 }
 nav.nav.bottom button.bottomItem.active {
 	color:#6200EA;
+	color:rgba(var(--color-text-primary, 98, 0, 234),1);
 	fill:#6200EA;
+	fill:rgba(var(--color-text-primary, 98, 0, 234),1);
 }
 nav.nav.bottom button.bottomItem svg {
 	height:24px;
@@ -67,13 +69,18 @@ nav.nav.bottom button.bottomItem svg path {
 
 nav.nav.bottom.colored {
 	background-color:#6200EA;
+	background-color:rgba(var(--color-primary, 98, 0, 234),1);
 }
 nav.nav.bottom.colored button.bottomItem {
 	background-color:transparent;
 	color:rgba(255,255,255,.5);
+	color:rgba(var(--color-text, 255, 255, 255),.5);
 	fill:rgba(255,255,255,.5);
+	fill:rgba(var(--color-text, 255, 255, 255),.5);
 }
 nav.nav.bottom.colored button.bottomItem.active {
 	color:#FFF;
+	color:rgba(var(--color-text, 255, 255, 255),1);
 	fill:#FFF;
+	fill:rgba(var(--color-text, 255, 255, 255),1);
 }

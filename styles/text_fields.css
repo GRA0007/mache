@@ -68,29 +68,35 @@
 }
 .field input:focus {
 	border-bottom:2px solid #6200EA;
+	border-bottom:2px solid rgba(var(--color-text-primary, 98, 0, 234),1);
 	outline:none;
 }
 .field input:not(:placeholder-shown) {
 	border-bottom:2px solid #6200EA;
+	border-bottom:2px solid rgba(var(--color-text-primary, 98, 0, 234),1);
 	outline:none;
 }
 .field.outlined input:focus {
 	border:2px solid #6200EA;
+	border:2px solid rgba(var(--color-text-primary, 98, 0, 234),1);
 }
 .field.outlined input:not(:placeholder-shown) {
 	border:2px solid #6200EA;
+	border:2px solid rgba(var(--color-text-primary, 98, 0, 234),1);
 }
 .field input:focus + label {
 	font-size:12px;
 	transform:none;
 	top:8px;
 	color:#6200EA;
+	color:rgba(var(--color-text-primary, 98, 0, 234),1);
 }
 .field input:not(:placeholder-shown) + label {
 	font-size:12px;
 	transform:none;
 	top:8px;
 	color:#6200EA;
+	color:rgba(var(--color-text-primary, 98, 0, 234),1);
 }
 .field.outlined input:focus + label {
 	top:-8px;

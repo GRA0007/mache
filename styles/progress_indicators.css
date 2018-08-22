@@ -8,6 +8,7 @@
 	stroke-dashoffset:0;
 	transform-origin:center;
 	stroke:#6200EA;
+	stroke:rgba(var(--color-primary, 98, 0, 234),1);
 	animation:dash 1.4s ease-in-out infinite;
 }
 
@@ -38,6 +39,7 @@
 	display:block;
 	width:300px;
 	background-color:#d7b7fd;
+	background-color:rgba(var(--color-primary, 98, 0, 234),.3);
 	background-clip:padding-box;
 	overflow:hidden;
 }
@@ -46,10 +48,12 @@
 	top:0;
 	bottom:0;
 	background-color:#6200ee;
+	background-color:rgba(var(--color-primary, 98, 0, 234),1);
 	transition:width .3s linear;
 }
 .progress.linear .indeterminate {
 	background-color:#6200ee;
+	background-color:rgba(var(--color-primary, 98, 0, 234),1);
 }
 .progress.linear .indeterminate:before {
 	content:'';

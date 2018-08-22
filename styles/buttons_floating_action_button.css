@@ -1,5 +1,6 @@
 button.fab {
 	background-color:#000;
+	background-color:rgba(var(--color-secondary, 0, 0, 0),1);
 	box-shadow:0 3px 16px 0 rgba(0,0,0,.6);
 	
 	height:56px;
@@ -13,13 +14,14 @@ button.fab {
 	border-radius:50px;
 	cursor:pointer;
 	
-	transition:background-color 0.2s;
+	transition:background-color 0.2s, filter 0.2s;
 }
 button.fab.extended {
 	height:48px;
 	width:initial;
 	min-width:48px;
 	color:#FFF;
+	color:rgba(var(--color-text-secondary, 255, 255, 255),1);
 	text-transform:uppercase;
 	white-space:nowrap;
 	font-family:inherit;
@@ -36,6 +38,11 @@ button.fab.mini {
 button.fab svg {
 	height:24px;
 	width:24px;
+	fill:#FFF;
+	fill:rgba(var(--color-text-secondary, 255, 255, 255),1);
+}
+button.fab svg path {
+	fill:inherit;
 }
 button.fab.extended svg {
 	padding-right:12px;
@@ -47,31 +54,6 @@ button.fab[disabled] {
 button.fab:focus {
 	outline:none;
 	background-color:#666;
-}
-
-button.outlined,
-button.text {
-	background-color:transparent;
-	box-shadow:none;
-	color:#6200EA;
-}
-button.outlined {
-	border:1px solid #b0b0b0;
-}
-button.outlined[disabled],
-button.text[disabled] {
-	color:#909090;
-	cursor:default;
-}
-button.outlined:hover,
-button.text:hover {
-	background-color:rgba(179,136,255,.2);
-}
-button.outlined[disabled]:hover,
-button.text[disabled]:hover {
-	background-color:transparent;
-}
-button.outlined:focus,
-button.text:focus {
-	background-color:rgba(179,136,255,.4);
+	background-color:rgba(var(--color-secondary, 0, 0, 0),1);
+	filter:brightness(115%);
 }

@@ -70,7 +70,9 @@ nav.drawer .item:active {
 }
 nav.drawer .item.active {
 	background-color:#ece0fd;
+	background-color:rgba(var(--color-primary, 98, 0, 234),.2);
 	color:#6200EA;
+	color:rgba(var(--color-text-primary, 98, 0, 234),1);
 }
 nav.drawer .item svg {
 	height:24px;
@@ -81,6 +83,7 @@ nav.drawer .item svg {
 }
 nav.drawer .item.active svg {
 	fill:#6200EA;
+	fill:rgba(var(--color-text-primary, 98, 0, 234),1);
 }
 nav.drawer .item svg path {
 	fill:inherit;

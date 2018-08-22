@@ -1,0 +1,25 @@
+:root {
+	/* 
+		Colors must be converted to rgb
+		
+		You can use this online tool if you have
+		a hex code like #0099FF or a hsl value like
+		hsl(202, 50%, 50%): http://www.convertacolor.com/
+	*/
+	
+	--color-primary:98, 0, 234;
+	--color-secondary:0, 0, 0;
+	--color-text:255, 255, 255;
+	--color-text-primary:var(--color-primary);
+	--color-text-secondary:255, 255, 255;
+	
+	--color-primary:0, 153, 255;
+	--color-secondary:255, 152, 0;
+	
+	/*yellow*/
+	--color-primary:255,235,59;
+	--color-secondary:179,157,219;
+	--color-text:50,50,50;
+	--color-text-primary:255,143,0;
+	--color-text-secondary:0,0,0;
+}

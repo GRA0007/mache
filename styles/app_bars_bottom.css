@@ -2,6 +2,7 @@
 	height:56px;
 	width:100%;
 	background-color:#6200EA;
+	background-color:rgba(var(--color-primary, 98, 0, 234),1);
 	display:flex;
 	align-items:center;
 	box-sizing:border-box;
@@ -13,24 +14,35 @@
 }
 .appBar.bottom.cutout {
 	background:radial-gradient(circle at top, transparent 0%, transparent 36px, #6200EA 36px, #6200EA 100%);
+	background:radial-gradient(circle at top, transparent 0%, transparent 36px, rgba(var(--color-primary, 98, 0, 234),1) 36px, rgba(var(--color-primary, 98, 0, 234),1) 100%);
 }
 .appBar.bottom button.icon {
 	margin-left:24px;
+}
+.appBar.bottom button.icon svg {
+	fill:#FFF;
+	fill:rgba(var(--color-text, 255, 255, 255),1);
 }
 .appBar.bottom button.icon:first-child {
 	margin-left:0;
 }
 .appBar.bottom button.icon:hover {
-	box-shadow:0 0 0 8px rgba(255,255,255,.2);
-	background-color:rgba(255,255,255,.2);
+	box-shadow:0 0 0 8px rgba(255,255,255,.15);
+	box-shadow:0 0 0 8px rgba(var(--color-text, 255, 255, 255),.15);
+	background-color:rgba(255,255,255,.15);
+	background-color:rgba(var(--color-text, 255, 255, 255),.15);
 }
 .appBar.bottom button.icon:focus {
-	box-shadow:0 0 0 8px rgba(255,255,255,.3);
-	background-color:rgba(255,255,255,.3);
+	box-shadow:0 0 0 8px rgba(255,255,255,.23);
+	box-shadow:0 0 0 8px rgba(var(--color-text, 255, 255, 255),.23);
+	background-color:rgba(255,255,255,.23);
+	background-color:rgba(var(--color-text, 255, 255, 255),.23);
 }
 .appBar.bottom button.icon:active {
-	box-shadow:0 0 0 8px rgba(255,255,255,.4);
-	background-color:rgba(255,255,255,.4);
+	box-shadow:0 0 0 8px rgba(255,255,255,.34);
+	box-shadow:0 0 0 8px rgba(var(--color-text, 255, 255, 255),.34);
+	background-color:rgba(255,255,255,.34);
+	background-color:rgba(var(--color-text, 255, 255, 255),.34);
 }
 
 .appBar.bottom button.fab {

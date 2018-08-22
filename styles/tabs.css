@@ -7,6 +7,7 @@
 }
 .tabs.colored {
 	background-color:#6200EA;
+	background-color:rgba(var(--color-primary, 98, 0, 234),1);
 }
 .tabs .tab {
 	display:inline-block;
@@ -24,12 +25,15 @@
 }
 .tabs .tab:hover {
 	background-color:rgba(179,136,255,.2);
+	background-color:rgba(var(--color-primary, 98, 0, 234),.1);
 }
 .tabs .tab:focus {
 	background-color:rgba(179,136,255,.3);
+	background-color:rgba(var(--color-primary, 98, 0, 234),.2);
 }
 .tabs .tab:active {
 	background-color:rgba(179,136,255,.4);
+	background-color:rgba(var(--color-primary, 98, 0, 234),.3);
 }
 .tabs .tab span {
 	padding:16px 18px;
@@ -53,24 +57,32 @@
 	fill:inherit;
 }
 .tabs.colored .tab {
-	color:#bd95f7;
+	color:rgba(255,255,255,.6);
+	color:rgba(var(--color-text, 255, 255, 255),.6);
 }
 .tabs .tab.active {
 	color:#6200EE;
+	color:rgba(var(--color-text-primary, 98, 0, 234),1);
 	border-bottom:2px solid #6200EE;
+	border-bottom:2px solid rgba(var(--color-text-primary, 98, 0, 234),1);
 }
 .tabs .tab.active svg {
 	fill:#6200EE;
+	fill:rgba(var(--color-text-primary, 98, 0, 234),1);
 }
 .tabs.colored .tab.active {
 	color:#FFF;
+	color:rgba(var(--color-text, 255, 255, 255),1);
 	border-bottom:2px solid #FFF;
+	border-bottom:2px solid rgba(var(--color-text, 255, 255, 255),1);
 }
 .tabs.colored .tab svg {
-	fill:#b68af7;
+	fill:rgba(255,255,255,.6);
+	fill:rgba(var(--color-text, 255, 255, 255),.6);
 }
 .tabs.colored .tab.active svg {
 	fill:#FFF;
+	fill:rgba(var(--color-text, 255, 255, 255),1);
 }
 
 .tabs.scroll {
