@@ -12,11 +12,15 @@
 	--color-text:255, 255, 255;
 	--color-text-primary:var(--color-primary);
 	--color-text-secondary:255, 255, 255;
-	
+}
+
+body.theme1 {
+	/* Blue and orange */
 	--color-primary:0, 153, 255;
 	--color-secondary:255, 152, 0;
-	
-	/*yellow*/
+}
+body.theme2 {
+	/* Yellow and lavender */
 	--color-primary:255,235,59;
 	--color-secondary:179,157,219;
 	--color-text:50,50,50;

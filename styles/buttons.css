@@ -61,7 +61,7 @@ button.text[disabled]:hover {
 	box-shadow:none;
 }
 button.contained:focus {
-	filter:brightness(115%);
+	filter:brightness(115%) saturate(110%);
 }
 button.contained:focus,
 button.outlined:focus,
