@@ -4,6 +4,21 @@
 	width:280px;
 	margin:10px 0 30px;
 }
+.field svg {
+	position:absolute;
+	top:16px;
+	height:24px;
+	width:24px;
+	left:12px;
+	fill:#666;
+}
+.field svg.end {
+	left:initial;
+	right:12px;
+}
+.field svg path {
+	fill:inherit;
+}
 .field input {
 	font-family:inherit;
 	color:#000;
@@ -21,11 +36,25 @@
 	box-sizing:border-box;
 	transition:border 0.15s, background-color 0.15s;
 }
+.field svg + input {
+	padding-left:44px;
+}
+.field svg.end + input {
+	padding-left:12px;
+	padding-right:44px;
+}
 .field.outlined input {
 	background-color:transparent;
 	border-radius:5px;
 	border:1px solid #757575;
 	padding:0 12px;
+}
+.field.outlined svg + input {
+	padding-left:44px;
+}
+.field.outlined svg.end + input {
+	padding-left:12px;
+	padding-right:44px;
 }
 .field label {
 	color:#585858;
@@ -38,6 +67,12 @@
 	transform:translateY(-50%);
 	pointer-events:none;
 	transition:font-size 0.15s, top 0.15s, left 0.15s, transform 0.15s, color 0.15s, padding 0.15s;
+}
+.field svg ~ label {
+	left:44px;
+}
+.field svg.end ~ label {
+	left:12px;
 }
 .field input[disabled] + label {
 	color:#8a8a8a;
