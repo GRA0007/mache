@@ -1,18 +1,87 @@
 .imageList {
 	display:grid;
-	grid-auto-rows:150px;
-	grid-template-columns:repeat(3, 150px);
+	grid-auto-rows:150px; /* unlimited rows each 150px tall */
+	grid-template-columns:repeat(3, 150px); /* 3 columns each 150px wide */
 	grid-gap:4px;
 	gap:4px;
 	justify-items:stretch;
 	align-items:stretch;
 	padding:4px;
+	justify-content:center;
 }
 .imageList img {
 	object-fit:cover;
 }
+.imageList .image {
+	position:relative;
+}
+.imageList .image img {
+	height:100%;
+	width:100%;
+}
+.imageList .image .actions {
+	position:absolute;
+	padding:8px 0;
+	top:100%;
+	left:0;
+	right:0;
+	color:#000;
+	display:flex;
+	align-items:center;
+	font-weight:500;
+	font-size:20px;
+}
+.imageList .image .actionsScrim {
+	position:absolute;
+	background-color:rgba(0,0,0,.5);
+	padding:0 14px;
+	bottom:0;
+	left:0;
+	right:0;
+	color:rgba(255,255,255,.9);
+	display:flex;
+	align-items:center;
+	height:48px;
+}
+.imageList .image .actions span,
+.imageList .image .actionsScrim span {
+	flex:1;
+}
+.imageList .image .actionsScrim svg {
+	fill:#EEE;
+}
+.imageList .image .actionsScrim button.icon:hover {
+	box-shadow:0 0 0 8px rgba(255,255,255,.15);
+	background-color:rgba(255,255,255,.15);
+}
+.imageList .image .actionsScrim button.icon:focus {
+	box-shadow:0 0 0 8px rgba(255,255,255,.23);
+	background-color:rgba(255,255,255,.23);
+}
+.imageList .image .actionsScrim button.icon:active {
+	box-shadow:0 0 0 8px rgba(255,255,255,.34);
+	background-color:rgba(255,255,255,.34);
+}
 
 .imageList.quilted {
-	grid-auto-rows:200px;
-	grid-template-columns:repeat(4, 200px);
+	grid-auto-rows:200px; /* unlimited rows each 200px tall */
+	grid-template-columns:repeat(4, 200px); /* 4 columns each 200px wide */
+}
+
+.imageList.masonry {
+	display:block;
+	column-count:4; /* 4 columns */
+	column-width:200px; /* 200px wide */
+    column-gap:4px;
+}
+.imageList.masonry.spaced {
+	column-gap:24px;
+	padding:24px;
+}
+.imageList.masonry > img,
+.imageList.masonry > .image {
+	margin-bottom:4px;
+}
+.imageList.masonry.spaced > .image {
+	margin-bottom:60px;
 }
