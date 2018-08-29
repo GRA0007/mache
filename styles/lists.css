@@ -7,6 +7,8 @@
 	padding:0 16px;
 	min-height:48px;
 	background-color:#FFF;
+	text-decoration:none;
+	color:#000;
 }
 .list .item > span {
 	flex:1;
