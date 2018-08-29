@@ -1,0 +1,65 @@
+.list {
+	padding:8px 0;
+}
+.list .item {
+	display:flex;
+	align-items:center;
+	padding:0 16px;
+	min-height:48px;
+	background-color:#FFF;
+}
+.list .item > span {
+	flex:1;
+	display:block;
+	padding:16px 0;
+}
+.list .item .secondary {
+	display:block;
+	font-size:14px;
+	color:#00000099;
+	padding-top:2px;
+}
+.list .item .overline {
+	display:block;
+	font-size:10px;
+	color:#000;
+	padding-bottom:4px;
+	letter-spacing:1.5px;
+	text-transform:uppercase;
+	font-weight:500;
+}
+.list .item svg {
+	height:24px;
+	width:24px;
+	margin-right:32px;
+	padding:16px 0;
+	align-self:flex-start;
+}
+.list .item img {
+	height:40px;
+	width:40px;
+	object-fit:cover;
+	border-radius:50%;
+	margin-right:16px;
+	padding:8px 0;
+}
+.list .item img.large {
+	height:56px;
+	width:56px;
+	border-radius:0;
+}
+.list .item img.long {
+	height:56px;
+	width:100px;
+	border-radius:0;
+	margin-left:-16px;
+}
+.list .item input[role=checkbox]:first-child + label,
+.list .item input[type=radio]:first-child + label,
+.list .item input[role=switch]:first-child + label {
+	margin-right:32px;
+}
+
+hr.short {
+	margin-left:116px;
+}
