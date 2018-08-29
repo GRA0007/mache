@@ -1,0 +1,100 @@
+.card {
+	background-color:#FFF;
+	border-radius:5px;
+	box-shadow:0 1px 4px 1px rgba(0,0,0,.3);
+	width:344px;
+	position:relative;
+}
+.card.outlined {
+	box-shadow:none;
+	border:1px solid #BBB;
+}
+.card .overline {
+	display:block;
+	color:#000000de;
+	text-transform:uppercase;
+	font-size:10px;
+	font-weight:500;
+	padding:16px 16px 0;
+	letter-spacing:1.5px;
+}
+.card .title {
+	display:block;
+	color:#000000de;
+	font-size:24px;
+	font-weight:500;
+	padding:20px 16px 8px;
+}
+.card .overline ~ .title {
+	padding-top:12px;
+}
+.card .subtitle {
+	display:block;
+	color:#000000de;
+	font-size:16px;
+	padding:24px 16px 4px;
+}
+.card .secondary {
+	display:block;
+	color:#00000099;
+	font-size:14px;
+	padding:0 16px;
+}
+.card .secondary.dark {
+	color:#000000de;
+}
+.card .body {
+	display:block;
+	color:#00000099;
+	font-size:14px;
+	padding:12px 16px 16px;
+}
+.card.smallImg .smallImg {
+	height:80px;
+	width:80px;
+	object-fit:cover;
+	position:absolute;
+	right:16px;
+	top:16px;
+}
+.card.smallImg .title,
+.card.smallImg .secondary {
+	padding-right:112px;
+}
+.card button {
+	margin:8px 0 8px 8px;
+}
+
+.card.avatar .title,
+.card.avatar .secondary {
+	padding-left:72px;
+}
+.card.avatar .title {
+	font-size:20px;
+	padding-top:16px;
+	padding-bottom:2px;
+}
+.card.avatar .secondary {
+	padding-bottom:16px;
+}
+.card.avatar .avatar {
+	height:40px;
+	width:40px;
+	object-fit:cover;
+	position:absolute;
+	left:16px;
+	top:16px;
+	border-radius:50%;
+}
+.card.fullImg .fullImg {
+	height:194px;
+	width:100%;
+	object-fit:cover;
+}
+
+.card hr {
+	margin:0 16px;
+}
+.card hr.full {
+	margin:0;
+}
