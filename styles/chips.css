@@ -44,20 +44,19 @@ button.chip[disabled]:hover {
 button.chip.outlined[disabled]:hover {
 	background-color:#FFF;
 }
-button.chip:focus,
+button.chip:focus {
+	outline:none;
+	box-shadow:0 2px 7px 0 rgba(0,0,0,.4);
+}
 button.chip.active {
 	background-color:#e2cffc;
-	outline:none;
+	background-color:rgba(var(--color-primary, 98, 0, 234),.2);
 }
 button.chip.active,
 button.chip.outlined.active:focus {
 	color:#6200EA;
+	color:rgba(var(--color-text-primary, 98, 0, 234),1);
 }
-button.chip.image:focus,
-button.chip.outlined:focus,
-button.chip.icon:focus,
-button.chip.dismissable:focus,
-button.chip.filter:focus,
 button.chip.image.active,
 button.chip.icon.active,
 button.chip.dismissable.active,
@@ -67,12 +66,10 @@ button.chip.filter.active {
 }
 button.chip.outlined.active {
 	background-color:#ece1fd;
+	background-color:rgba(var(--color-primary, 98, 0, 234),.1);
 	border-color:#ccaef9;
+	border-color:rgba(var(--color-primary, 98, 0, 234),.3);
 }
-button.chip.image.outlined:focus,
-button.chip.icon.outlined:focus,
-button.chip.dismissable.outlined:focus,
-button.chip.filter.outlined:focus,
 button.chip.image.outlined.active,
 button.chip.icon.outlined.active,
 button.chip.dismissable.outlined.active,
@@ -172,10 +169,12 @@ button.chip.outlined.dismissable[disabled] svg:nth-child(2):hover {
 	pointer-events:none;
 }
 button.chip.error,
+button.chip.error.active,
 button.chip.error:focus {
 	background-color:#f0cfd6;
 }
 button.chip.outlined.error,
+button.chip.outlined.error.active,
 button.chip.outlined.error:focus {
 	background-color:#f5e2e7;
 	border-color:#eab9c2;
