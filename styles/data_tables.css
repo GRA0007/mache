@@ -1,0 +1,75 @@
+.dataTable {
+	max-width:800px;
+	width:100%;
+	margin:0 auto;
+}
+.dataTable .header {
+	display:flex;
+	padding:6px 16px 24px;
+}
+.dataTable .header .title {
+	font-size:20px;
+	font-weight:500;
+	color:#000000de;
+	flex:1;
+}
+.dataTable .header button {
+	margin-left:24px;
+}
+
+.dataTable .footer {
+	display:flex;
+	padding:16px;
+	justify-content:flex-end;
+	align-items:center;
+}
+.dataTable .footer span {
+	font-size:12px;
+	color:#666;
+	padding:0 0 0 24px;
+}
+.dataTable .footer select {
+	margin-left:18px;
+	font-family:inherit;
+	font-size:12px;
+	color:#666;
+	border:0;
+	padding:8px 4px;
+}
+.dataTable .footer button {
+	margin-left:24px;
+}
+
+.dataTable table {
+	width:100%;
+	border-collapse:collapse;
+}
+.dataTable table tr th:first-child,
+.dataTable table tr td:first-child {
+	width:1px;
+	height:48px;
+}
+.dataTable table tr th:first-child input + label,
+.dataTable table tr td:first-child input + label {
+	margin:0 12px 0 16px;
+	vertical-align:middle;
+}
+.dataTable table tr th {
+	border-bottom:2px solid #DDD;
+	text-align:left;
+	color:#666;
+	font-size:12px;
+	font-weight:500;
+	transition:color 0.2s;
+	cursor:pointer;
+}
+.dataTable table tr th:hover {
+	color:#000;
+}
+.dataTable table tr td {
+	border-bottom:1px solid #DDD;
+	transition:background-color 0.2s;
+}
+.dataTable table tr:hover td {
+	background-color:#EFEFEF;
+}

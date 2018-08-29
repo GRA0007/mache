@@ -4,7 +4,7 @@
 [aria-title]:after {
 	content:attr(aria-title);
 	position:absolute;
-	bottom:-35px;
+	bottom:-25px;
 	opacity:0;
 	pointer-events:none;
 	user-select:none;
@@ -24,16 +24,16 @@
 }
 [aria-title]:hover:after {
 	opacity:1;
-	bottom:-40px;
+	bottom:-30px;
 }
 @media screen and (max-width: 500px) {
 	[aria-title]:after {
 		height:32px;
 		padding:0 16px;
 		font-size:14px;
-		bottom:-40px;
+		bottom:-30px;
 	}
 	[aria-title]:hover:after {
-		bottom:-45px;
+		bottom:-35px;
 	}
 }
