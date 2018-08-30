@@ -21,15 +21,24 @@ body {
 /* Main Content */
 main {
 	margin:70px auto 8px auto;
+	width:800px;
 	max-width:100%;
 	box-sizing:border-box;
 	padding:0 16px;
 }
+h1 {
+	font-weight:500;
+}
 h2 {
 	margin:0;
 	padding-top:10px;
+	font-weight:500;
 }
 
 a[href] {
 	color:#1976D2;
+}
+
+#banner {
+	width:100%;
 }
