@@ -1,0 +1,145 @@
+body {
+	margin:0;
+	/* Set the theme colors */
+	--color-primary:33, 150, 243;
+	--color-text-primary:var(--color-primary);
+	--color-text:255, 255, 255;
+}
+
+/* Return to examples link */
+#back {
+	position:relative;
+	z-index:1000;
+	background-color:#DDD;
+	color:#000;
+	display:block;
+	padding:8px 12px;
+}
+
+#appBar {
+	/* White app bar */
+	--color-primary:255,255,255;
+	--color-text:0,0,0;
+	
+	/* Stick to the top */
+	position:sticky;
+	top:0;
+	z-index:500;
+}
+
+main {
+	/* Grid display for the albums */
+	display:grid;
+	grid-auto-rows:auto;
+	grid-template-columns:repeat(4, 200px);
+	grid-gap:16px;
+	gap:16px;
+	justify-items:stretch;
+	align-items:stretch;
+	padding:16px 16px 72px;
+	justify-content:center;
+}
+.card.fullImg .fullImg {
+	height:200px;
+}
+.card .title {
+	font-size:20px;
+}
+.card .secondary {
+	padding-bottom:24px;
+}
+
+/* Use media queries to change the grid size when the screen is smaller */
+@media screen and (max-width:872px) {
+	main {
+		grid-template-columns:repeat(3, 200px);
+	}
+}
+@media screen and (max-width:658px) {
+	main {
+		grid-template-columns:repeat(2, 190px);
+	}
+	.card.fullImg .fullImg {
+		height:190px;
+	}
+}
+@media screen and (max-width:424px) {
+	main {
+		grid-template-columns:repeat(2, auto);
+	}
+	.card.fullImg .fullImg {
+		height:180px;
+	}
+}
+
+#media {
+	height:56px;
+	transition:height 0.3s;
+}
+#media.extended {
+	height:300px;
+}
+#media #open_sheet {
+	transition:transform 0.3s;
+}
+#media.extended #open_sheet {
+	transform:rotate(180deg);
+}
+#media #controls {
+	/* Set the color of the bottom sheet, and some custom styling */
+	background-color:rgb(var(--color-primary));
+	display:flex;
+	align-items:center;
+	padding:4px 16px 0;
+	height:56px;
+	box-sizing:border-box;
+}
+#media .progress.linear {
+	/* Change the color and position of the progress bar */
+	background-color:#0D47A1;
+	width:100%;
+	top:0;
+	left:0;
+	position:absolute;
+}
+#media .progress.linear .determinate {
+	background-color:#82B1FF;
+}
+#media #controls span {
+	display:block;
+	color:#FFF;
+	padding:0 24px;
+}
+#media_title {
+	flex:1;
+}
+
+#queue div {
+	display:flex;
+	opacity:.6;
+	color:#000;
+	height:48px;
+	align-items:center;
+	padding-left:8px;
+}
+#queue div.active {
+	opacity:1;
+}
+#queue div svg {
+	height:24px;
+	width:24px;
+	opacity:0;
+	padding:0 16px;
+}
+#queue div.active svg {
+	opacity:1;
+}
+#queue div svg path {
+	fill:#666;
+}
+#queue div span {
+	padding:0 16px;
+}
+#queue div span:nth-child(2) {
+	flex:1;
+}
