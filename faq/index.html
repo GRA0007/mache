@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html>
 	<head>
-		<title>Examples - Mâché</title>
+		<title>FAQ - Mâché</title>
 		<meta name="viewport" content="width=device-width, initial-scale=1, minimum-scale=1">
 		
 		<!-- Supporting -->
@@ -9,7 +9,6 @@
 		<link rel="stylesheet" href="../styles/dividers.css" />
 		<link rel="stylesheet" href="../styles/buttons.css" />
 		<link rel="stylesheet" href="../styles/navigation_drawer.css" />
-		<link rel="stylesheet" href="../styles/image_lists.css" />
 		
 		<link rel="stylesheet" href="../style.css" />
 	</head>
@@ -26,7 +25,7 @@
 				<svg viewBox="0 0 24 24"><path d="M13,9H11V7H13M13,17H11V11H13M12,2A10,10 0 0,0 2,12A10,10 0 0,0 12,22A10,10 0 0,0 22,12A10,10 0 0,0 12,2Z" /></svg>
 				<span>About</span>
 			</a>
-			<a href="./" class="item active">
+			<a href="../examples/" class="item">
 				<svg viewBox="0 0 24 24"><path d="M12,16L19.36,10.27L21,9L12,2L3,9L4.63,10.27M12,18.54L4.62,12.81L3,14.07L12,21.07L21,14.07L19.37,12.8L12,18.54Z" /></svg>
 				<span>Examples</span>
 			</a>
@@ -34,7 +33,7 @@
 				<svg viewBox="0 0 24 24"><path d="M2,10.96C1.5,10.68 1.35,10.07 1.63,9.59L3.13,7C3.24,6.8 3.41,6.66 3.6,6.58L11.43,2.18C11.59,2.06 11.79,2 12,2C12.21,2 12.41,2.06 12.57,2.18L20.47,6.62C20.66,6.72 20.82,6.88 20.91,7.08L22.36,9.6C22.64,10.08 22.47,10.69 22,10.96L21,11.54V16.5C21,16.88 20.79,17.21 20.47,17.38L12.57,21.82C12.41,21.94 12.21,22 12,22C11.79,22 11.59,21.94 11.43,21.82L3.53,17.38C3.21,17.21 3,16.88 3,16.5V10.96C2.7,11.13 2.32,11.14 2,10.96M12,4.15V4.15L12,10.85V10.85L17.96,7.5L12,4.15M5,15.91L11,19.29V12.58L5,9.21V15.91M19,15.91V12.69L14,15.59C13.67,15.77 13.3,15.76 13,15.6V19.29L19,15.91M13.85,13.36L20.13,9.73L19.55,8.72L13.27,12.35L13.85,13.36Z" /></svg>
 				<span>Components</span>
 			</a>
-			<a href="../faq/" class="item">
+			<a href="./" class="item active">
 				<svg viewBox="0 0 24 24"><path d="M15.07,11.25L14.17,12.17C13.45,12.89 13,13.5 13,15H11V14.5C11,13.39 11.45,12.39 12.17,11.67L13.41,10.41C13.78,10.05 14,9.55 14,9C14,7.89 13.1,7 12,7A2,2 0 0,0 10,9H8A4,4 0 0,1 12,5A4,4 0 0,1 16,9C16,9.88 15.64,10.67 15.07,11.25M13,19H11V17H13M12,2A10,10 0 0,0 2,12A10,10 0 0,0 12,22A10,10 0 0,0 22,12C22,6.47 17.5,2 12,2Z" /></svg>
 				<span>FAQ</span>
 			</a>
@@ -49,15 +48,74 @@
 			</a>
 		</nav>
 		
-		<main>
-			<h1>Examples</h1>
-			<p>Examples are small, semi-interactive demonstrations of real-world applications using Mache. Use the code for each example from the <a href="https://github.com/GRA0007/mache/tree/master/examples">Github repo</a> to kickstart your own project.</p>
-			<div class="imageList">
-				<a class="image" href="./music_player/">
-					<img src="../res/examples/music_player.png" />
-					<div class="actionsScrim">Music player</div>
-				</a>
-			</div>
+		<main class="faq">
+			<h1>FAQ</h1>
+			<p>Have a question that's not answered here? <a href="https://github.com/GRA0007/mache/issues/new" target="_blank">Submit an issue</a> on Github.</p>
+			
+			<h2>What licence is it under?</h2>
+			<p>Mache is under the MPL 2.0.</p>
+			
+			<h2>How do I install it?</h2>
+			<p>On each component page, there are examples of the HTML
+			markup to use, and a CSS file that you can either copy and
+			paste or import into your own project. Some components also
+			have "recommended Javascript", which may be nessecary to use
+			that component, depending on how you want to use it.</p>
+			
+			<h2>How big is it?</h2>
+			<p></p>
+			
+			<h2>What browsers does it work on?</h2>
+			<p>Mache works on most modern browsers.</p>
+			
+			<h2>Do I have to give credit if I use it?</h2>
+			<p>If you are building a personal project, you don't have
+			to give credit, although it is encouraged. It is strongly
+			encouraged that you give credit in a commercial product,
+			whether that be on a credit or info page, or in your footer.</p>
+			
+			<h2>What is material design?</h2>
+			<p>Material design is a design language created by Google
+			to help unify the user experience, while providing a way to
+			deliver a unique UI, all with principles that help make
+			up a good design.</p>
+			
+			<h2>Hasn't Google already made a material design library for the web?</h2>
+			<p>Yes, however <a href="">this library</a> is designed to
+			replicate the exact design principles and components at the
+			expense of code understandability and file size.</p><p>Mache is
+			different, as it is designed to provide the basic material
+			components, while still being completely readable, and most
+			importantly, editable. With Mache, if you don't like a particular
+			part of the design you get, you can simply edit it.</p>
+			
+			<h2>How can I use material theming with this?</h2>
+			<p>Google has recently introduced "material theming", which
+			essentially allows you to redesign the material components
+			to better fit your brand language. If you understand what this
+			means, and you have had a look at the <a href="">theming examples</a>
+			in the material docs, you can use CSS to alter the elements
+			in Mache to theme it how you want.</p>
+			
+			<h2>I found a problem, what can I do?</h2>
+			<p>If you've found a bug or problem with the library, you can
+			let me know on Github by making a <a href="">new issue</a>.</p>
+			
+			<h2>How can I request a new feature?</h2>
+			<p>If you want a feature added to Mache, like a particular
+			component state that isn't included by default, and you think
+			more people will benefit from having it instead of just coding
+			it in yourself, then you can submit a feature request on Github
+			by making a <a href="">new issue</a>.</p>
+			
+			<h2>Does it use Javascript?</h2>
+			<p>While no components in Mache <em>require</em> javascript,
+			some components like the 
+			<a href="../components/navigation_drawer.html">navigation drawer</a>
+			or the <a href="../components/sheets_bottom.html">bottom sheet</a>
+			have "recommended Javascript". This is because, depending on
+			how you implement these components, a class needs to be toggled
+			in order to open/close the components.</p>
 		</main>
 		
 		<div class="scrim" onclick="closeAll();"></div>
