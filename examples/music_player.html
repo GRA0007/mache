@@ -1,0 +1,184 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<title>Music player example</title>
+		<meta name="viewport" content="width=device-width, initial-scale=1, minimum-scale=1">
+		
+		<!-- Supporting -->
+		<link rel="stylesheet" href="../styles/app_bars_top.css" />
+		<link rel="stylesheet" href="../styles/buttons.css" />
+		<link rel="stylesheet" href="../styles/sheets_bottom.css" />
+		<link rel="stylesheet" href="../styles/cards.css" />
+		<link rel="stylesheet" href="../styles/progress_indicators.css" />
+		<link rel="stylesheet" href="../styles/tooltips.css" />
+		
+		<!-- Page style -->
+		<style>
+			body {
+				margin:0;
+				/* Set the theme colors */
+				--color-primary:33, 150, 243;
+				--color-text-primary:var(--color-primary);
+				--color-text:255, 255, 255;
+			}
+			
+			#back {
+				position:relative;
+				z-index:1000;
+				background-color:#DDD;
+				color:#000;
+				display:block;
+				padding:8px 12px;
+			}
+			
+			#appBar {
+				/* White app bar */
+				--color-primary:255,255,255;
+				--color-text:0,0,0;
+				
+				/* Stick to the top */
+				position:sticky;
+				top:0;
+				z-index:500;
+			}
+			
+			#media {
+				/* Set the color of the bottom sheet, and some custom styling */
+				background-color:rgb(var(--color-primary));
+				display:flex;
+				align-items:center;
+				padding:4px 16px 0;
+			}
+			#media .progress.linear {
+				/* Change the color and position of the progress bar */
+				background-color:#0D47A1;
+				width:100%;
+				top:0;
+				left:0;
+				position:absolute;
+			}
+			#media .progress.linear .determinate {
+				background-color:#82B1FF;
+			}
+			#media span {
+				display:block;
+				color:#FFF;
+				padding:0 24px;
+			}
+			#media_title {
+				flex:1;
+			}
+			
+			main {
+				display:grid;
+				grid-auto-rows:auto;
+				grid-template-columns:repeat(4, 200px);
+				grid-gap:16px;
+				gap:16px;
+				justify-items:stretch;
+				align-items:stretch;
+				padding:16px 16px 72px;
+				justify-content:center;
+			}
+			.card.fullImg .fullImg {
+				height:200px;
+			}
+			.card .title {
+				font-size:20px;
+			}
+			.card .secondary {
+				padding-bottom:24px;
+			}
+			
+			@media screen and (max-width:872px) {
+				main {
+					grid-template-columns:repeat(3, 200px);
+				}
+			}
+			@media screen and (max-width:658px) {
+				main {
+					grid-template-columns:repeat(2, 190px);
+				}
+				.card.fullImg .fullImg {
+					height:190px;
+				}
+			}
+			@media screen and (max-width:424px) {
+				main {
+					grid-template-columns:repeat(2, auto);
+				}
+				.card.fullImg .fullImg {
+					height:180px;
+				}
+			}
+		</style>
+	</head>
+	<body>
+		<!-- Return to examples -->
+		<a href="../examples/" id="back">&lt; Back to examples</a>
+		
+		<!-- Top app bar -->
+		<div class="appBar top" id="appBar">
+			<button type="button" class="icon"><svg viewBox="0 0 24 24"><path d="M20,11V13H8L13.5,18.5L12.08,19.92L4.16,12L12.08,4.08L13.5,5.5L8,11H20Z" /></svg></button>
+			<span class="title">Albums</span>
+			<button type="button" class="icon"><svg viewBox="0 0 24 24"><path fill="#FFF" d="M9.5,3A6.5,6.5 0 0,1 16,9.5C16,11.11 15.41,12.59 14.44,13.73L14.71,14H15.5L20.5,19L19,20.5L14,15.5V14.71L13.73,14.44C12.59,15.41 11.11,16 9.5,16A6.5,6.5 0 0,1 3,9.5A6.5,6.5 0 0,1 9.5,3M9.5,5C7,5 5,7 5,9.5C5,12 7,14 9.5,14C12,14 14,12 14,9.5C14,7 12,5 9.5,5Z" /></svg></button>
+			<button type="button" class="icon"><svg viewBox="0 0 24 24"><path fill="#FFF" d="M12,16A2,2 0 0,1 14,18A2,2 0 0,1 12,20A2,2 0 0,1 10,18A2,2 0 0,1 12,16M12,10A2,2 0 0,1 14,12A2,2 0 0,1 12,14A2,2 0 0,1 10,12A2,2 0 0,1 12,10M12,4A2,2 0 0,1 14,6A2,2 0 0,1 12,8A2,2 0 0,1 10,6A2,2 0 0,1 12,4Z" /></svg></button>
+		</div>
+		
+		<!-- Cards -->
+		<main>
+			<div class="card fullImg">
+				<img class="fullImg" src="https://direct.rhapsody.com/imageserver/images/Alb.227816738/500x500.jpg" />
+				<span class="title">Keep On</span>
+				<span class="secondary">Major</span>
+			</div>
+			<div class="card fullImg">
+				<img class="fullImg" src="https://direct.rhapsody.com/imageserver/images/Alb.239690943/500x500.jpg" />
+				<span class="title">Mothership</span>
+				<span class="secondary">Dance Gavin Dance</span>
+			</div>
+			<div class="card fullImg">
+				<img class="fullImg" src="https://direct.rhapsody.com/imageserver/images/Alb.251850283/500x500.jpg" />
+				<span class="title">Casanova</span>
+				<span class="secondary">Brian Fresco</span>
+			</div>
+			<div class="card fullImg">
+				<img class="fullImg" src="https://direct.rhapsody.com/imageserver/images/Alb.235119248/500x500.jpg" />
+				<span class="title">Strikes Again</span>
+				<span class="secondary">CooBee Coo</span>
+			</div>
+			<div class="card fullImg">
+				<img class="fullImg" src="https://direct.rhapsody.com/imageserver/images/Alb.233075942/500x500.jpg" />
+				<span class="title">Retrograde</span>
+				<span class="secondary">Crown the Empire</span>
+			</div>
+			<div class="card fullImg">
+				<img class="fullImg" src="https://direct.rhapsody.com/imageserver/images/Alb.236486660/500x500.jpg" />
+				<span class="title">Under the Grave</span>
+				<span class="secondary">ROZES</span>
+			</div>
+			<div class="card fullImg">
+				<img class="fullImg" src="https://direct.rhapsody.com/imageserver/images/Alb.238792504/500x500.jpg" />
+				<span class="title">Medicine for Birds</span>
+				<span class="secondary">Angelica Garcia</span>
+			</div>
+			<div class="card fullImg">
+				<img class="fullImg" src="https://direct.rhapsody.com/imageserver/images/Alb.226696196/500x500.jpg" />
+				<span class="title">Ology</span>
+				<span class="secondary">Gallant</span>
+			</div>
+		</main>
+		
+		<!-- Bottom sheet -->
+		<div class="sheet bottom open" id="media">
+			<!-- Determinate linear progress bar -->
+			<div class="progress linear">
+				<div class="determinate" style="width:70%;"></div>
+			</div>
+			<button type="button" class="icon light"><svg viewBox="0 0 24 24"><path fill="#FFF" d="M7.41,15.41L12,10.83L16.59,15.41L18,14L12,8L6,14L7.41,15.41Z" /></svg></button>
+			<span id="media_title">Talking to Myself</span>
+			<span>3:58</span>
+			<button type="button" class="icon light" aria-title="Pause" data-title-position="top"><svg viewBox="0 0 24 24"><path fill="#FFF" d="M13,16V8H15V16H13M9,16V8H11V16H9M12,2A10,10 0 0,1 22,12A10,10 0 0,1 12,22A10,10 0 0,1 2,12A10,10 0 0,1 12,2M12,4A8,8 0 0,0 4,12A8,8 0 0,0 12,20A8,8 0 0,0 20,12A8,8 0 0,0 12,4Z" /></svg></button>
+		</div>
+	</body>
+</html>

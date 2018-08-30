@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<title>Examples - Mâché</title>
+		<meta name="viewport" content="width=device-width, initial-scale=1, minimum-scale=1">
+		
+		<!-- Supporting -->
+		<link rel="stylesheet" href="../styles/app_bars_top.css" />
+		<link rel="stylesheet" href="../styles/dividers.css" />
+		<link rel="stylesheet" href="../styles/buttons.css" />
+		<link rel="stylesheet" href="../styles/navigation_drawer.css" />
+		<link rel="stylesheet" href="../styles/image_lists.css" />
+		
+		<link rel="stylesheet" href="../style.css" />
+	</head>
+	<body>
+		<div class="appBar top">
+			<button type="button" class="icon" onclick="openDrawer();"><svg style="width:24px;height:24px" viewBox="0 0 24 24"><path fill="#333" d="M3,6H21V8H3V6M3,11H21V13H3V11M3,16H21V18H3V16Z" /></svg></button>
+			<span class="title">Mâché</span>
+		</div>
+		
+		<nav class="drawer">
+			<span class="title">Mâché</span>
+			<span class="subtext">Material design</span>
+			<a href="../" class="item">
+				<svg viewBox="0 0 24 24"><path d="M13,9H11V7H13M13,17H11V11H13M12,2A10,10 0 0,0 2,12A10,10 0 0,0 12,22A10,10 0 0,0 22,12A10,10 0 0,0 12,2Z" /></svg>
+				<span>About</span>
+			</a>
+			<a href="./" class="item active">
+				<svg viewBox="0 0 24 24"><path d="M12,16L19.36,10.27L21,9L12,2L3,9L4.63,10.27M12,18.54L4.62,12.81L3,14.07L12,21.07L21,14.07L19.37,12.8L12,18.54Z" /></svg>
+				<span>Examples</span>
+			</a>
+			<a href="../components/" class="item">
+				<svg viewBox="0 0 24 24"><path d="M2,10.96C1.5,10.68 1.35,10.07 1.63,9.59L3.13,7C3.24,6.8 3.41,6.66 3.6,6.58L11.43,2.18C11.59,2.06 11.79,2 12,2C12.21,2 12.41,2.06 12.57,2.18L20.47,6.62C20.66,6.72 20.82,6.88 20.91,7.08L22.36,9.6C22.64,10.08 22.47,10.69 22,10.96L21,11.54V16.5C21,16.88 20.79,17.21 20.47,17.38L12.57,21.82C12.41,21.94 12.21,22 12,22C11.79,22 11.59,21.94 11.43,21.82L3.53,17.38C3.21,17.21 3,16.88 3,16.5V10.96C2.7,11.13 2.32,11.14 2,10.96M12,4.15V4.15L12,10.85V10.85L17.96,7.5L12,4.15M5,15.91L11,19.29V12.58L5,9.21V15.91M19,15.91V12.69L14,15.59C13.67,15.77 13.3,15.76 13,15.6V19.29L19,15.91M13.85,13.36L20.13,9.73L19.55,8.72L13.27,12.35L13.85,13.36Z" /></svg>
+				<span>Components</span>
+			</a>
+			<a href="../faq/" class="item">
+				<svg viewBox="0 0 24 24"><path d="M15.07,11.25L14.17,12.17C13.45,12.89 13,13.5 13,15H11V14.5C11,13.39 11.45,12.39 12.17,11.67L13.41,10.41C13.78,10.05 14,9.55 14,9C14,7.89 13.1,7 12,7A2,2 0 0,0 10,9H8A4,4 0 0,1 12,5A4,4 0 0,1 16,9C16,9.88 15.64,10.67 15.07,11.25M13,19H11V17H13M12,2A10,10 0 0,0 2,12A10,10 0 0,0 12,22A10,10 0 0,0 22,12C22,6.47 17.5,2 12,2Z" /></svg>
+				<span>FAQ</span>
+			</a>
+			<hr>
+			<a href="https://github.com/GRA0007/mache/" target="_blank" class="item">
+				<svg viewBox="0 0 24 24"><path d="M12,2A10,10 0 0,0 2,12C2,16.42 4.87,20.17 8.84,21.5C9.34,21.58 9.5,21.27 9.5,21C9.5,20.77 9.5,20.14 9.5,19.31C6.73,19.91 6.14,17.97 6.14,17.97C5.68,16.81 5.03,16.5 5.03,16.5C4.12,15.88 5.1,15.9 5.1,15.9C6.1,15.97 6.63,16.93 6.63,16.93C7.5,18.45 8.97,18 9.54,17.76C9.63,17.11 9.89,16.67 10.17,16.42C7.95,16.17 5.62,15.31 5.62,11.5C5.62,10.39 6,9.5 6.65,8.79C6.55,8.54 6.2,7.5 6.75,6.15C6.75,6.15 7.59,5.88 9.5,7.17C10.29,6.95 11.15,6.84 12,6.84C12.85,6.84 13.71,6.95 14.5,7.17C16.41,5.88 17.25,6.15 17.25,6.15C17.8,7.5 17.45,8.54 17.35,8.79C18,9.5 18.38,10.39 18.38,11.5C18.38,15.32 16.04,16.16 13.81,16.41C14.17,16.72 14.5,17.33 14.5,18.26C14.5,19.6 14.5,20.68 14.5,21C14.5,21.27 14.66,21.59 15.17,21.5C19.14,20.16 22,16.42 22,12A10,10 0 0,0 12,2Z" /></svg>
+				<span>Github</span>
+			</a>
+			<a href="https://benpai.keybase.pub" target="_blank" class="item">
+				<svg viewBox="0 0 24 24"><path d="M12,4A4,4 0 0,1 16,8A4,4 0 0,1 12,12A4,4 0 0,1 8,8A4,4 0 0,1 12,4M12,14C16.42,14 20,15.79 20,18V20H4V18C4,15.79 7.58,14 12,14Z" /></svg>
+				<span>Benjamin Grant</span>
+			</a>
+		</nav>
+		
+		<main>
+			<h1>Examples</h1>
+			<p>Examples are small, semi-interactive demonstrations of real-world applications using Mache. Use the code for each example from the <a href="https://github.com/GRA0007/mache/tree/master/examples">Github repo</a> to kickstart your own project.</p>
+			<div class="imageList">
+				<a class="image" href="music_player.html">
+					<img src="../res/examples/music_player.png" />
+					<div class="actionsScrim">Music player</div>
+				</a>
+				<a class="image" href="">
+					<img src="../res/placeholder.svg" />
+					<div class="actionsScrim">...</div>
+				</a>
+			</div>
+		</main>
+		
+		<div class="scrim" onclick="closeAll();"></div>
+		
+		<script src="../script.js"></script>
+	</body>
+</html>

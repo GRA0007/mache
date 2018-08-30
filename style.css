@@ -42,3 +42,15 @@ a[href] {
 #banner {
 	width:100%;
 }
+
+/* Example page */
+.imageList {
+	grid-auto-rows:200px;
+	grid-template-columns:repeat(3, auto);
+}
+@media screen and (max-width:550px) {
+	.imageList {
+		grid-auto-rows:150px;
+		grid-template-columns:repeat(2, auto);
+	}
+}
