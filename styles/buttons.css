@@ -170,6 +170,9 @@ button.icon svg {
 	vertical-align:middle;
 	fill:#666;
 }
+button.icon.light svg {
+	fill:#FFF;
+}
 button.icon svg path {
 	fill:inherit;
 }
@@ -181,6 +184,10 @@ button.icon:hover {
 	box-shadow:0 0 0 8px rgba(0,0,0,.1);
 	background-color:rgba(0,0,0,.1);
 }
+button.icon.light:hover {
+	box-shadow:0 0 0 8px rgba(255,255,255,.2);
+	background-color:rgba(255,255,255,.2);
+}
 button.icon[disabled]:hover {
 	box-shadow:none;
 	background-color:transparent;
@@ -190,7 +197,15 @@ button.icon:focus {
 	background-color:rgba(0,0,0,.15);
 	outline:none;
 }
+button.icon.light:focus {
+	box-shadow:0 0 0 8px rgba(255,255,255,.3);
+	background-color:rgba(255,255,255,.3);
+}
 button.icon:active {
 	box-shadow:0 0 0 8px rgba(0,0,0,.2);
 	background-color:rgba(0,0,0,.2);
+}
+button.icon.light:active {
+	box-shadow:0 0 0 8px rgba(255,255,255,.4);
+	background-color:rgba(255,255,255,.4);
 }
